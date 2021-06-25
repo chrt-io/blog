@@ -9,4 +9,4 @@ categories: jekyll
 
 yes just a test hey
 
-![](uploads/screenshot-2021-06-22-at-14-10-40.png)
+![](/assets/uploads/screenshot-2021-06-22-at-19-45-38.png)
