@@ -1,0 +1,18 @@
+---
+label: simple-post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: categories
+  label: categories
+pages:
+- _posts/2021-06-23-just-a-test.md
