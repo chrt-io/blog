@@ -5,7 +5,7 @@ date: 2021-02-02 00:00:00 +0000
 categories: ''
 
 ---
-When I finally used [Scratch](https://scratch.mit.edu/) with my daughter, I started thinking in blocks (and nested blocks), and I wondered why we are not similarly building charts. It was fun and it helped ideation through the simplest process: _adding_.
+When I finally used [Scratch](https://scratch.mit.edu/) with my daughter, I started thinking in blocks (and nested blocks), and I wondered why we were not building charts similarly. It was fun and it helped to ideate through the simplest of processes: _adding_.
 
 I started to tinker away to create charts that could be as simple as plugging blocks one after the other (or inside each other):
 
@@ -14,7 +14,7 @@ I started to tinker away to create charts that could be as simple as plugging bl
 * add an axis block
 * ...and so on...
 
-Yep! Something like this could be easily translated into Scratch blocks, and in more traditional programming languages:
+Yep! Something like this could be easily translated into Scratch blocks, or in more traditional programming languages:
 
     chart.add(linechart).add(axis)
 
