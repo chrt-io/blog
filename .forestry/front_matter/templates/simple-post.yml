@@ -5,6 +5,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: post
 - type: text
   name: title
   label: title
@@ -14,5 +16,6 @@ fields:
 - type: text
   name: categories
   label: categories
+  hidden: true
 pages:
 - _posts/2021-06-23-just-a-test.md
