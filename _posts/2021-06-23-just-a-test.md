@@ -2,7 +2,8 @@
 layout: post
 title: just a test
 date: 2021-06-23T23:00:00.000+00:00
-categories: jekyll
+# categories: post fun why
+nonav: 1
 
 ---
 # this is just a test

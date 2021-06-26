@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+{% assign food = site.layoutVars[page.layout].food %}
 <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    <span>default {{ food }}</span>
   </header>
 
   <div class="post-content">
