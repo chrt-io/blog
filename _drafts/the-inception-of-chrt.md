@@ -1,11 +1,11 @@
 ---
 layout: post
-title: The inception of chrt
+title: The unfolding of chrt
 date: 2021-02-02 00:00:00 +0000
 categories: ''
 
 ---
-When I helped my daughter learn [Scratch](https://scratch.mit.edu/ "Scratch"), I started thinking in blocks (and nested blocks), and I wonder why I could not create charts in a similar way. It was fun and it helped ideation by adding.
+When I helped my daughter learn [Scratch](https://scratch.mit.edu/ "Scratch"), I started thinking in blocks (and nested blocks), and I wonder why I could not create charts in a similar way. It was fun and it helped ideation by _adding_.
 
 I thought if we could have a similar model for programming, then I realized I was already doing it everyday with any markup language (html,  xml and also React/JSX for the same matter).
 
@@ -22,4 +22,4 @@ Yep! Something that could be easily translated into Scratch blocks, and in more 
 
 It had to be simple, intuitive and with default settings that could build beautifully crafted charts.
 
-And that's how chrt was started.
+And that's how **chrt** was started.
