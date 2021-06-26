@@ -5,21 +5,21 @@ date: 2021-02-02 00:00:00 +0000
 categories: ''
 
 ---
-When I finally used [Scratch](https://scratch.mit.edu/ "Scratch") with my daughter, I started thinking in blocks (and nested blocks), and I wonder why I could not create charts in a similar way. It was fun and it helped ideation by _adding_.
+When I finally used [Scratch](https://scratch.mit.edu/) with my daughter, I started thinking in blocks (and nested blocks), and I wondered why we are not similarly building charts. It was fun and it helped ideation through the simplest process: _adding_.
 
-I thought if we could have a similar model for programming, then I realized I was already doing it everyday with any markup language (html,  xml and also React/JSX for the same matter).
-
-Still it wasn't fun. I started to think about a way to create charts that could be simple as plugging blocks one after the other (or inside eachother):
+I started to tinker away to create charts that could be as simple as plugging blocks one after the other (or inside each other):
 
 * add a chart canvas block
 * add a line chart block
 * add an axis block
 * ...and so on...
 
-Yep! Something that could be easily translated into Scratch blocks, and in more traditional programming languages:
+Yep! Something like this could be easily translated into Scratch blocks, and in more traditional programming languages:
 
     chart.add(linechart).add(axis)
 
-It had to be simple, intuitive and with default settings that could build beautifully crafted charts.
+It had to be simple, intuitive and with default settings that could build beautifully crafted charts. Yes, _beautifully crafted,_ because I've experimented with chart libraries since ever and I have to say they all need a significant effort to be customized or even to follow some of the best practices (I'm talking to you, rotated axis titles!).
 
-And that's how **chrt** was started.
+So the goal was outlined: a block-based javascript library to create beautiful charts in a fun way.
+
+And that's how **chrt** started
