@@ -11,4 +11,6 @@ The big names 🧑‍🏫 👩‍🏫: Spear, Bertin, Wilkinson, Tukey, Few, Tuf
 
 #### Luckily the wilderness 🦁 is not that wild 🐱.
 
-There are examples of inspiring beautiful neat and crips charts. Datawrapper 
+There are examples libraries and tools to generate inspiring beautiful neat and crips charts. One of our preferred tool is [Datawrapper](https://www.datawrapper.de/). Leading publications build charts with it. Datawrapper won't let you disappointed: the charts are beautifil, neat and easy to read - and they follow the best practices. In a way I would say they are _opinionated charts_: they let you customize almost everything without destroying years of research in data visualization with some questionably designed chart element (axis titles, annotations, labels...)
+
+This doesn't quite often happens with chart libraries, historically you can do almost everything.
