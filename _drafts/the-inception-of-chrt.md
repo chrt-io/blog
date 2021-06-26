@@ -9,7 +9,7 @@ When I helped my daughter learn [Scratch](https://scratch.mit.edu/ "Scratch") I 
 
 I thought if we could have a similar model for programming, then I realized I was already doing it everyday with any markup language (html,  xml and also React/JSX for the same matter).
 
-Still it wasn't fun. I started to think about a way to create charts that could be simple as plugging blocks one after the other (or inside eachother): 
+Still it wasn't fun. I started to think about a way to create charts that could be simple as plugging blocks one after the other (or inside eachother):
 
 * add a chart canvas block
 * add a line chart block
@@ -20,6 +20,6 @@ Yep! Something that could be easily translated into Scratch blocks, and in more 
 
     chart.add(linechart).add(axis)
 
-It had to be simple, intuitive and with default settings that could build beautifully crafted charts. 
+It had to be simple, intuitive and with default settings that could build beautifully crafted charts.
 
-And that's how chrt was incepted.
+And that's how chrt was started.
