@@ -17,7 +17,7 @@ With **chrt** we thought that together with the more traditional approach of dec
 
     Chrt().data([...])
 
-We could alsot declare the data directly from the component that uses it and let **chrt** manage the data internally 🪄:
+We could also declare the data directly from the component that uses it and let **chrt** manage the data internally 🪄:
 
     Chrt()
         .add(chrtColumns().data([...])
