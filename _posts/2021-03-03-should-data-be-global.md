@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data be local
+title: Data should be local
 date: 2021-03-03 00:00:00 +0000
 categories: ''
 
