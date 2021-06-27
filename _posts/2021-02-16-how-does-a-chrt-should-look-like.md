@@ -18,6 +18,12 @@ This doesn't quite often happens with chart libraries, throug which you can do a
 
 Whit this question in minds we set our first goals for our charts:
 
-* neat and crisp 
+* neat and crisp ✨
 * following best practices 📚🎓
 * easy to customize 💇
+
+The answer to these questions is another question:
+
+#### How to set the right balance between opinionated logic and flexibility?
+
+As developers we want the freedom to control every pixel of our screen, as designers we want to define boundaries. We will need to figure out where **chrt** is sitting between these two approaches.
