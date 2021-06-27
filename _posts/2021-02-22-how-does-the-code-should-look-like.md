@@ -19,7 +19,7 @@ I played with [R](https://www.r-project.org/) and [ggplot2](https://ggplot2.tidy
 
 Inspired by ggplot2, d3 and [Scratch](https://scratch.mit.edu/), I started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
 
-##### I sat aside and I thought, how would I like to build a chart?
+#### _How would I like to build a chart?_
 
 After some tinkering around I scribbled ✍️ down the following:
 
