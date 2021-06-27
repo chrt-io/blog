@@ -49,3 +49,5 @@ And what about customizing a single block? No JSON config files, but simple decl
         .color('#333')
         .opacity(0.4)
         .dashed()
+
+This was a milestone for **chrt**, figuring out how the code should look like gave use the direction to follow.
