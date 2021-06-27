@@ -11,7 +11,7 @@ Most of the chart libraries expect the coder to declare the data for the entire 
 
 At the same time, it defines layers as:
 
-> one or more layers, with each layer having one geometric object, one statistical transformation, one position adjustment, and optionally, one dataset and set of aesthetic mappings
+> each layer having one geometric object, one statistical transformation, one position adjustment, and optionally, one dataset and set of aesthetic mappings
 
 And this is where we like ❤️‍🔥 the layered grammar.
 
