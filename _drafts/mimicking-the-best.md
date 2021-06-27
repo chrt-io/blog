@@ -24,3 +24,14 @@ These charts ☝️ made with **chrt** contain multiple elements:
 * areas with variable baseline
 * inside and outside aligned labels
 * label formatting
+
+The first chart that we replicated with chrt is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute:
+
+![](/assets/uploads/screenshot-2021-06-27-at-18-37-23.png)
+
+The chart includes:
+
+* annotations
+* markers
+* labels
+* range indicator
