@@ -12,6 +12,12 @@ The big names 🧑‍🏫 👩‍🏫 (Spear, Bertin, Wilkinson, Tukey, Few, Tuf
 
 #### Luckily the wilderness 🦁 is not that wild 🐱
 
-There are examples of libraries and tools to generate inspiring beautiful charts. One of our preferred tool is [Datawrapper](https://www.datawrapper.de/). Leading publications build charts with it. Datawrapper won't let you disappointed: the charts are beautifil, neat and easy to read - and they follow the best practices. In a way I would say they are _opinionated charts_: they let you customize almost everything without destroying years of research in data visualization with some questionably designed chart element (axis titles, annotations, labels...)
+There are examples of libraries and tools to generate inspiring beautiful charts. One of our favourite tool is [Datawrapper](https://www.datawrapper.de/), leading publications build charts with it. Datawrapper won't let you disappointed: the charts are beautiful, neat and easy to read - and they follow the best practices. I would say that in a way they are _opinionated charts_: it lets you customize almost everything without destroying years of research in data visualization with some questionably designed chart element (axis titles, annotations, labels...)
 
-This doesn't quite often happens with chart libraries, historically you can do almost everything. I will never forget the feeling when I stepped into the pavillion of a large conference to see all around me dashboard built with the default versions of some widely used chart libraries. Default colors, default fonts, default sizes, rotated titles and labels...everywhere around me. I thought: _why default charts should not be beautiful?_ and _why default charts should be so tough to customize?_
+This doesn't quite often happens with chart libraries, throug which you can do almost everything. I will never forget the feeling when I stepped into the pavillion of a large conference to see all around me dashboards built with the default versions of some widely used chart libraries. Default colors, default fonts, default sizes, rotated titles and labels...everywhere around me. I thought: _why default charts should not be beautiful?_ and _why default charts should be so tough to customize?_ and ultimately _why default charts are so ugly?_
+
+Whit this question in minds we set our first goals for our charts:
+
+* neat and crisp 
+* following best practices 📚🎓
+* easy to customize 💇
