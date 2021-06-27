@@ -11,7 +11,7 @@ From the first moment we used **chrt** to clone charts that we liked from leadin
 
 Another source of inspiration we used since day one is the [Datawrapper blog](https://blog.datawrapper.de/). We tried to replicate the charts from [Greenland’s ice is melting, but without an OMG moment](https://blog.datawrapper.de/weekly-chart-greenland-ice-melting-global-warming-2019/) (that is also an experiment inspired by a chart from the Economist).
 
-The result was exciting 🎊:
+The results were exciting 🎊:
 
 ![](/assets/uploads/screenshot-2021-06-27-at-18-04-26.png)
 
