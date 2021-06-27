@@ -15,7 +15,7 @@ There are examples of libraries and tools to generate inspiring beautiful charts
 
 This doesn't quite often happens with chart libraries, throug which you can do almost everything. I will never forget the feeling when I stepped into the pavillion of a large conference to see all around me dashboards built with the default versions of some widely used chart libraries. Default colors, default fonts, default sizes, rotated titles and labels...everywhere around me. I thought: _why default charts should not be beautiful?_ and _why default charts should be so tough to customize?_ and ultimately _why default charts are so ugly?_
 
-Whit this question in minds we set out our first goals for our charts:
+Whit this question in minds we set out our first goals for **chrt**:
 
 * neat and crisp ✨
 * following best practices 📚🎓
