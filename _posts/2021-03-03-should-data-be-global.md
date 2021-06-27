@@ -5,7 +5,7 @@ date: 2021-03-03 00:00:00 +0000
 categories: ''
 
 ---
-Most of the chart libraries expect the developer to declare the data for the entire chart. The paper [A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html) states:
+Most of the chart libraries expect the coder to declare the data for the entire chart. The paper [A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html) states:
 
 > When creating a plot we start with data.
 
