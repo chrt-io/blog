@@ -17,7 +17,7 @@ I played with [R](https://www.r-project.org/) and [ggplot2](https://ggplot2.tidy
 
 #### And here came **chrt**!
 
-Inspired by ggplot2, d3 and [Scratch](https://scratch.mit.edu/), I started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
+Inspired by ggplot2, d3 and [Scratch](https://scratch.mit.edu/), we started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
 
 #### _How would I like to build a chart?_
 
