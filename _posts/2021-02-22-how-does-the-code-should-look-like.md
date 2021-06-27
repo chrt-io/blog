@@ -50,4 +50,4 @@ And what about customizing a single block? No JSON config files, but simple meth
         .opacity(0.4)
         .dashed()
 
-This was an important milestone for **chrt**, figuring out how the code should look like gave use the direction to follow.
+This was an important milestone for **chrt**, figuring out how the code should look like gave use a direction to follow.
