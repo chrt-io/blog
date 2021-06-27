@@ -27,11 +27,12 @@ These charts ☝️ made with **chrt** contain multiple elements:
 
 The first chart that we replicated with chrt is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute:
 
-![](/assets/uploads/screenshot-2021-06-27-at-18-37-23.png)
+![](/assets/uploads/screenshot-2021-06-27-at-18-46-55.png)
 
-The chart includes:
+The chart replicated with **chrt** includes:
 
 * annotations
 * markers
 * labels
 * range indicator
+* x axis in the middle of the chart
