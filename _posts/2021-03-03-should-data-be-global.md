@@ -44,3 +44,5 @@ With this approach we can dinamically add components to the chart with their own
 In the above ☝️ code snippet we are adding two lines 📈 in the chart with their own set of data 📦, **chrt** will take care of updating scales and axes based on the combination of the two datasets as shown below (and yes! **chrt** works in [Observable](https://observablehq.com/) 🎊):
 
 ![](/assets/uploads/localdata.gif)
+
+#### It will be completely up to the developers to decide if the data will be _centralized_ or _decentralized_ 
