@@ -5,7 +5,7 @@ date: 2021-02-02 00:00:00 +0000
 categories: ''
 
 ---
-When I finally used [Scratch](https://scratch.mit.edu/) with my daughter, I started thinking in blocks (and nested blocks), and I wondered why we were not building charts similarly. It was fun and it helped to ideate through the simplest of processes: _adding_.
+When I finally used [Scratch](https://scratch.mit.edu/) with my daughter, I started thinking in blocks (and nested blocks), and I wondered why we were not building charts similarly. It was fun and it helped to ideate through one of the most natural processes: _adding_.
 
 I started to tinker away to create charts that could be as simple as plugging blocks one after the other (or inside each other):
 
