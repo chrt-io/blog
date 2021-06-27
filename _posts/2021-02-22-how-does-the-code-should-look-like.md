@@ -15,7 +15,7 @@ Most of the chart libraries start from a JSON-like config file, however I don't 
 
 I played with [R](https://www.r-project.org/) and [ggplot](https://ggplot2.tidyverse.org/), I loved its way to declaratively creating graphics, based on **The Grammar of Graphics**, with the concept of adding layers.
 
-#### And here came **chrt**! 
+#### And here came **chrt**!
 
 Inspired by ggplot, d3 and [Scratch](https://scratch.mit.edu/), I started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
 
@@ -50,4 +50,4 @@ And what about customizing a single block? No JSON config files, but simple decl
         .opacity(0.4)
         .dashed()
 
-This was a milestone for **chrt**, figuring out how the code should look like gave use the direction to follow.
+This was an important milestone for **chrt**, figuring out how the code should look like gave use the direction to follow.
