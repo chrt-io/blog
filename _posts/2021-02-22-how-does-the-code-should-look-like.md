@@ -43,7 +43,7 @@ Then I thought every building block should have a way to add other blocks:
         )
         .add(lineChart().add(Markers).add(Labels))
 
-And what about customizing a single block? No JSON config files 🙅‍♀️, but simple methods to be called directly from the block:
+And what about customizing a single block? No JSON config files 🙅‍♀️, but simple methods to be called directly:
 
     lineChart()
         .color('#333')
