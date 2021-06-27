@@ -9,15 +9,19 @@ Most of the approaches of chart libraries expect the developer to declare the da
 
 > When creating a plot we start with data.
 
-This is the mantra 🙏 of data visualization: ☝️ first learn about your data, ✌️ then decide how to visualize it. We agree with that 😺! But from a programming standpoint, could it be more casual? Do we really need to start from the data?
+At the same time it defines layers as:
 
-#### What if at the logic level data is local to the visual item that shows it?
+> one or more layers, with each layer having one geometric object, one statistical transformation, one position adjustment, and optionally, one dataset and set of aesthetic mappings
 
-With **chrt** we thought that together with the more traditional approach of declaring the data at a chart level:
+And this is where we like ❤️‍🔥 the layered grammar.
+
+#### At the logic level data can be _local_ to the visual item that shows it.
+
+With **chrt** we followed the principle that together with the more traditional approach of declaring the data at a chart level:
 
     Chrt().data([...])
 
-We could also declare the data directly from the component that uses it and let **chrt** manage the data internally 🪄:
+We can also declare the data directly for the component that uses it and let **chrt** manage the data internally 🪄:
 
     Chrt()
         .add(chrtColumns().data([...])
