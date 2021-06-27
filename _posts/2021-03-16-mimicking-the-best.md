@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mimicking the best
+title: Imitating the best
 date: 2021-03-16 00:00:00 +0000
 categories: ''
 
@@ -37,4 +37,4 @@ The chart replicated with **chrt** includes:
 * range indicator
 * x axis in the middle of the chart
 
-#### By mimicking the charts that we found well designed and interesting, we could implement quickly many of the features that we wanted in **chrt** with a focus on quality.
+#### By simulating the charts that we found well designed and interesting with chrt, we could implement quickly many of the features that we wanted with a focus on quality.
