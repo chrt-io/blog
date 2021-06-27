@@ -9,7 +9,7 @@ Most of the approaches of chart libraries expect the developer to declare the da
 
 > When creating a plot we start with data.
 
-This is the mantra 🙏 of data visualization: first learn about your data, then decide how to visualize it. We agree with that! But from a programming standpoint, could it be more casual? Do we really need to start from the data?
+This is the mantra 🙏 of data visualization: ☝️ first learn about your data, ✌️ then decide how to visualize it. We agree with that! But from a programming standpoint, could it be more casual? Do we really need to start from the data?
 
 #### What if at a logic level the data is local to the visual item that shows it?
 
