@@ -20,7 +20,7 @@ Yep! A system like this could be easily translated into Scratch blocks, or in mo
 
 The [layered grammar of graphics]() at the foundation of ggplot2 is based on a similar model. And I love it! However, ggplot2 is for R, it has a steep learning curve and can be tricky to visually customize.
 
-The system I was thinking about had to be simple, intuitive and with default settings that could build beautifully crafted charts. Yes, _beautifully crafted._ I've experimented with many chart libraries and I still have to find one that is easy to customize and that enforces the best practices (yes, I'm talking to you, rotated axis titles!).
+The system I was thinking about had to be simple, intuitive and with default settings to build beautifully crafted charts. Yes, _beautifully crafted._ I've experimented with many chart libraries and I still have to find one that is easy to customize and that enforces the best practices (yes, I'm talking to you, rotated axis titles!).
 
 #### The goal was outlined: a block-based javascript library to create beautiful charts in a fun way.
 
