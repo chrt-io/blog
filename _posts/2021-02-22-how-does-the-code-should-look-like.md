@@ -13,11 +13,11 @@ Then [prototype.js](http://prototypejs.org/) and eventually [D3](https://d3js.or
 
 Most of the chart libraries start from a JSON-like config file, however I don't think as humans we think in config-files 😛. I never enjoyed these libraries, and that is the reason why I found myself starting from scratch with D3 every single time I wanted build 🏗️ a chart.
 
-I played with [R](https://www.r-project.org/) and [ggplot](https://ggplot2.tidyverse.org/), I loved its way to declaratively creating graphics, based on **The Grammar of Graphics**, with the concept of adding layers ([A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html)).
+I played with [R](https://www.r-project.org/) and [ggplot2](https://ggplot2.tidyverse.org/), I loved its way to declaratively creating graphics, based on **The Grammar of Graphics**, with the concept of adding layers ([A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html)).
 
 #### And here came **chrt**!
 
-Inspired by ggplot, d3 and [Scratch](https://scratch.mit.edu/), I started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
+Inspired by ggplot2, d3 and [Scratch](https://scratch.mit.edu/), I started thinking about a way of coding charts in a more **casual** way without compromising on the level of details that could be customized.
 
 ##### I sat aside and I thought, how would I like to build a chart?
 
