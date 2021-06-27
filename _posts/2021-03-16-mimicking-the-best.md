@@ -25,7 +25,7 @@ These charts ☝️ made with **chrt** contain multiple elements:
 * axis labels alignment
 * axis labels formatting
 
-The first chart that we replicated with **chrt** is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute:
+One of the first chart that we replicated with **chrt** is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute, because of its abundance of elements:
 
 ![](/assets/uploads/screenshot-2021-06-27-at-18-46-55.png)
 
