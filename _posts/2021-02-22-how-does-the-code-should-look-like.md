@@ -24,8 +24,8 @@ Inspired by ggplot, d3 and [Scratch](https://scratch.mit.edu/), I started thinki
 After some tinkering around I scribbled ✍️ down the following:
 
     Chrt()
-    	.data([...])
-    	.add(xAxis())
+        .data([...])
+        .add(xAxis())
         .add(yAxis())
         .add(lineChart())
 
@@ -34,21 +34,18 @@ This ☝️ was the first draft, and it was actually exciting!
 Then I thought every building block should have a way to add other blocks:
 
     Chrt()
-    	.data([...])
-    	.add(
-        	xAxis().add(xAxisRange()
-            )
+        .data([...])
+        .add(
+            xAxis().add(xAxisRange()
         )
         .add(
-        	yAxis().add(axisTitle())
+            yAxis().add(axisTitle())
         )
         .add(lineChart().add(Markers).add(Labels))
 
 And what about customizing a single block? No JSON config files, but simple declarative functions to be called directly from the block:
 
-    ...
     lineChart()
-    	.color('#333')
+        .color('#333')
         .opacity(0.4)
         .dashed()
-    ...
