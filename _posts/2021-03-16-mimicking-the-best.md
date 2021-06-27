@@ -35,6 +35,5 @@ The chart replicated with **chrt** includes:
 * markers
 * labels
 * range indicator
-* x axis in the middle of the chart
 
 #### By simulating the charts that we found well designed and interesting with chrt, we could implement quickly many of the features that we wanted with a focus on quality.
