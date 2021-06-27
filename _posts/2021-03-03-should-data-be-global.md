@@ -17,10 +17,10 @@ With **chrt** we thought that together with the more traditional approach of dec
 
     Chrt().data([...])
 
-We could alsot declare the data directly from the component that uses it and let chrt manage the data internally 🪄:
+We could alsot declare the data directly from the component that uses it and let **chrt** manage the data internally 🪄:
 
     Chrt()
-    	.add(chrtColumns().data([...])
+        .add(chrtColumns().data([...])
         .add(chrtLine().data[...])
 
 With this approach we can dinamically add components to the chart with their own data:
