@@ -36,4 +36,4 @@ The chart replicated with **chrt** includes:
 * labels
 * range indicator
 
-#### By simulating well designed and interesting charts with **chrt**, we could quickly implement many of the features that we wanted with a focus on quality.
+#### By simulating well designed and interesting charts with **chrt**, we could quickly implement many of the features that we wanted keeping a focus on quality.
