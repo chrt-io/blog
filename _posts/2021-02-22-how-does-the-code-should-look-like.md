@@ -9,7 +9,7 @@ The first chart library I used (almost 15 years ago) was [jpgraph](https://jpgra
 
 Then Javascript became the standard for everything web, and I spent a summer working with [Highcharts](https://www.highcharts.com/). At that time Highcharts was **canvas** based, and we had to squeeze in a lot of time into the optimization of its code for IE9 🥶.
 
-Then [prototype.js](http://prototypejs.org/) and eventually [D3](https://d3js.org/). D3 opened up a new universe of possibilities and fun. The feeling of freedom you get with D3 was unique: I could finally build whatever my imagination was suggesting.
+Then I discovered [prototype.js](http://prototypejs.org/) and eventually [D3](https://d3js.org/). D3 opened up a new universe of possibilities and fun. The feeling of freedom you get with D3 was unique: I could finally build whatever my imagination was suggesting.
 
 Most of the chart libraries start from a JSON-like config file, however I don't think as humans we think in config-files 😛. I never enjoyed these libraries, and that is the reason why I found myself starting from scratch with D3 every single time I wanted build 🏗️ a chart.
 
