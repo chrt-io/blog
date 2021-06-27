@@ -37,6 +37,6 @@ With this approach we can dinamically add components to the chart with their own
           .data([6,3,7,2,5,7,10,22,40,22])
       )
 
-In the above ☝️ code snippet we are adding two lines 📈 in the chart with their own set of data 📦. **chrt** will take care of updating scales and axes based on the combination of the two datasets as shown below (and yes! chrt works in [Observable](https://observablehq.com/)):
+In the above ☝️ code snippet we are adding two lines 📈 in the chart with their own set of data 📦. **chrt** will take care of updating scales and axes based on the combination of the two datasets as shown below (and yes! chrt works in [Observable](https://observablehq.com/) 🎊):
 
 ![](/assets/uploads/localdata.gif)
