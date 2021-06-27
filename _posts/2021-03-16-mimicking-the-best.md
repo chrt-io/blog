@@ -25,7 +25,7 @@ These charts ☝️ made with **chrt** contain multiple elements:
 * inside and outside aligned labels
 * label formatting
 
-The first chart that we replicated with chrt is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute:
+The first chart that we replicated with **chrt** is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute:
 
 ![](/assets/uploads/screenshot-2021-06-27-at-18-46-55.png)
 
@@ -36,3 +36,5 @@ The chart replicated with **chrt** includes:
 * labels
 * range indicator
 * x axis in the middle of the chart
+
+#### By mimicking the charts that we found well designed and interesting, we could implement quickly many of the features that we wanted in **chrt** with a focus on quality.
