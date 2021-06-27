@@ -5,8 +5,7 @@ date: 2021-02-16 00:00:00 +0000
 categories: ''
 
 ---
-#### At **chrt** we are always very excited 👯 when we create new charts 📊.  
-We love _neat and crisp_ 🤓 charts 📈.
+#### At **chrt** we are always very excited 👯 when we create new charts 📊. We love _neat and crisp_ 🤓 charts 📈.
 
 The big names 🧑‍🏫 👩‍🏫 (Spear, Bertin, Wilkinson, Tukey, Few, Tufte and others) have all described the best practices long ago, and still for most of the charts that we see out in the wild 🦁 (literally in the wild) it seems like they have never known these practices.
 
