@@ -7,7 +7,7 @@ categories: ''
 ---
 #### How can we create beautiful charts? Replicate the best!
 
-From the first moment we used **chrt** to clone charts that we liked from leading publications and inspiring books. The principle was simple: if we can reproduce the charts produced by NYT, Washington Post, Economist and others with **chrt,** then we will cover most of the best practices of data visualization.
+From the first moment, we used **chrt** to clone charts that we liked from leading publications and inspiring books. The principle was simple: if we can reproduce the charts produced by NYT, Washington Post, Economist and others with **chrt,** then we will cover most of the best practices of data visualization.
 
 Another source of inspiration we used since day one is the [Datawrapper blog](https://blog.datawrapper.de/). We tried to replicate the charts from [Greenland’s ice is melting, but without an OMG moment](https://blog.datawrapper.de/weekly-chart-greenland-ice-melting-global-warming-2019/) (that is also an experiment inspired by a chart from the Economist).
 
@@ -25,7 +25,7 @@ These charts ☝️ made with **chrt** contain multiple elements:
 * axis labels alignment
 * axis labels formatting
 
-One of the first chart that we replicated with **chrt** is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute, because of its abundance of elements:
+One of the first charts that we replicated with **chrt** is [The Productivity–Pay Gap](https://www.epi.org/productivity-pay-gap/) by the Economic Policy Institute, because of its abundance of elements:
 
 ![](/assets/uploads/screenshot-2021-06-27-at-18-46-55.png)
 
