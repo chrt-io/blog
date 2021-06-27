@@ -21,7 +21,7 @@ Whit this question in minds we set out our first goals for **chrt**:
 * following best practices 📚🎓
 * easy to customize 💇
 
-The answer to these questions is another question:
+The answer to these questions led to another question:
 
 #### How to set the right balance between opinionated logic and flexibility?
 
