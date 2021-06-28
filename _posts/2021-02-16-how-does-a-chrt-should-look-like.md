@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How does a chrt should look like?
+title: How should a chrt look like?
 date: 2021-02-16 00:00:00 +0000
 categories: ''
 
