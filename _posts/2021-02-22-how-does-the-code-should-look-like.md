@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How does the code should look like?
+title: How should the code look like?
 date: 2021-02-22 00:00:00 +0000
 categories: ''
 
