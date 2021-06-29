@@ -25,6 +25,18 @@ We all know what happened at the end of 2019 in China, and how this impacted the
 
 ## The Visualizations
 
-As said, I chose to plot data regarding the Covid-19 epidemic in Italy. Both plots use _small multiples_ to compare the evolution over time. The first one, shown here, uses multiple _bar charts_ to highlight the weekly progression of the virus in Italy. Each bar represents a week (as indicated by the labels at the very top and very bottom of the image): **all the charts share the same _x-axis_**, but they are independent regarding the _y-axis_: since the goal was to show a trend and not the actual numbers, I removed the labels and ticks of the vertical axis, **highlighting with an annotation the peak, and the type of data shown**. The last week shows, on top of the bar, an annotation showing the figures for that week.
+As said, I chose to plot data regarding the Covid-19 epidemic in Italy. Both plots use _small multiples_ to compare the evolution over time.
 
-![](/assets/uploads/screenshot-2021-06-29-at-19-05-48.png)
+The first one, shown here, uses multiple _bar charts_ to highlight the weekly progression of the virus in Italy. Each bar represents a week (as indicated by the labels at the very top and very bottom of the image): **all the charts share the same _x-axis_**, but they are independent regarding the _y-axis_: since the goal was to show a trend and not the actual numbers, I removed the labels and ticks of the vertical axis, **highlighting with an annotation the peak, and the type of data shown**. The last week shows, on top of the bar, an annotation showing the figures for that week.
+
+![Weekly Covid-19 Progression in Italy since Jan. 1st, 2021](/assets/uploads/screenshot-2021-06-29-at-19-05-48.png "Weekly Covid-19 Progression in Italy since Jan. 1st, 2021")
+
+As you can see, I avoided using colors, replacing them with SVG patterns: I've been able to assign a different pattern to each bar, depending on the quality of the data it represents (cross-hatched for _normal_ data, lines with a 45-degree inclination heading up for _higher_ values, lines with a 45-degree inclination heading down for _lower_ values of each category).
+
+The second chart aims to show if the Covid-19 impact on our lives changed between 2020 and 2021. Each data point is a week; the light grey area is 2020, while the dark grey line is 2021. Again, I've been able to create a readable chart without the need to use any color. 
+
+![Weekly Progression of Covid-19 in Italy: Comparison Between 2020 and 2021](/assets/uploads/screenshot-2021-06-29-at-19-49-04.png "Weekly Progression of Covid-19 in Italy: Comparison Between 2020 and 2021")
+
+At a closer inspection, you'll notice that the grey area is, in fact, a pattern.
+
+![Detail of the Pattern](/assets/uploads/screenshot-2021-06-29-at-19-50-00.png "Detail of the Pattern")
