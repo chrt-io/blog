@@ -23,4 +23,8 @@ To be clear: I'm not comparing the charts I'll show in few lines to these great 
 
 We all know what happened at the end of 2019 in China, and how this impacted the lives of almost everyone in the world. The virus reached Italy, officially, on February 24th, 2020, when _Patient 0_ was identified. Starting from the following month, as soon as the [Italian Civil Protection](https://www.protezionecivile.gov.it/it/ "Dipartimento della Protezione Civile") released a [Github repo](https://github.com/pcm-dpc/COVID-19 "pcm-dpc/COVID-19") containing all the data, Visualize News, the collective of Data Visualization professionals I am part of,[ created a website](https://coronavirus.visualize.news "Corona Virus in Italy") whose goal was to explain the Corona Virus situation in Italy to foreigners. The fastest way to start using this new library was to reuse some data I already had.
 
-## The Visualization
+## The Visualizations
+
+As said, I chose to plot data regarding the Covid-19 epidemic in Italy. Both plots use _small multiples_ to compare the evolution over time. The first one, shown here, uses multiple _bar charts_ to highlight the weekly progression of the virus in Italy. Each bar represents a week (as indicated by the labels at the very top and very bottom of the image): **all the charts share the same _x-axis_**, but they are independent regarding the _y-axis_: since the goal was to show a trend and not the actual numbers, I removed the labels and ticks of the vertical axis, **highlighting with an annotation the peak, and the type of data shown**. The last week shows, on top of the bar, an annotation showing the figures for that week.
+
+![](/assets/uploads/screenshot-2021-06-29-at-19-05-48.png)
