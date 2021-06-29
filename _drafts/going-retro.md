@@ -11,7 +11,7 @@ The web is full of different examples, [Nightingale](https://medium.com/nighting
 
 Recently, the work that[ W.E.B. Du Bois presented at the 1900 World Fair in Paris gained a lot of visibility](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/ "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color"), even with the publication of a [monographic book](https://amzn.to/3x6IK0u "Visualizing Black America: The Color Line at the Turn of the Twentieth Century") with all his charts.
 
-![COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS](/assets/uploads/561970-40-princetonarchitecturalpress_0.webp "COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS")
+![COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS](/assets/uploads/screenshot-2021-06-29-at-19-41-22.png "COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS")
 
 Another name that is often cited when talking about _Historical Data Visualization_ is [Charles Minard](https://en.wikipedia.org/wiki/Charles_Joseph_Minard "Charles Minard on Wikipedia"), who created the chart that someone calls [_The Best Graphic Ever Produced_](https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history "The Underappreciated Man Behind the “Best Graphic Ever Produced”"), illustrating Napoleon's travel to Russia during his 1812 campaign.
 
