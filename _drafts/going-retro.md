@@ -18,3 +18,9 @@ Another name that is often cited when talking about _Historical Data Visualizati
 ![By Charles Minard (1781-1870), Public Domain](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Minard.png/1600px-Minard.png "By Charles Minard (1781-1870), Public Domain")
 
 To be clear: I'm not comparing the charts I'll show in few lines to these great examples of complex data visualizations; I'm just explaining why when I have been asked to test chrt, I chose to try to replicate this _retrò_ feeling.
+
+## The data
+
+We all know what happened at the end of 2019 in China, and how this impacted the lives of almost everyone in the world. The virus reached Italy, officially, on February 24th, 2020, when _Patient 0_ was identified. Starting from the following month, as soon as the [Italian Civil Protection](https://www.protezionecivile.gov.it/it/ "Dipartimento della Protezione Civile") released a [Github repo](https://github.com/pcm-dpc/COVID-19 "pcm-dpc/COVID-19") containing all the data, Visualize News, the collective of Data Visualization professionals I am part of,[ created a website](https://coronavirus.visualize.news "Corona Virus in Italy") whose goal was to explain the Corona Virus situation in Italy to foreigners. The fastest way to start using this new library was to reuse some data I already had.
+
+## The Visualization
