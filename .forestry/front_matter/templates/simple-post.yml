@@ -17,9 +17,3 @@ fields:
   name: categories
   label: categories
   hidden: true
-pages:
-- _posts/2021-02-02-the-inception-of-chrt.md
-- _posts/2021-02-16-how-does-a-chrt-should-look-like.md
-- _posts/2021-02-22-how-does-the-code-should-look-like.md
-- _posts/2021-03-03-should-data-be-global.md
-- _posts/2021-03-16-mimicking-the-best.md
