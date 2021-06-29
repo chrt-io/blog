@@ -17,3 +17,5 @@ fields:
   name: categories
   label: categories
   hidden: true
+pages:
+- _posts/going-retro.md
