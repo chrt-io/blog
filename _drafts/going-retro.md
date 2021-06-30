@@ -33,7 +33,7 @@ The first one, shown here, uses multiple _bar charts_ to highlight the weekly pr
 
 As you can see, I avoided using colors, replacing them with SVG patterns: I've been able to assign a different pattern to each bar, depending on the quality of the data it represents (cross-hatched for _normal_ data, lines with a 45-degree inclination heading up for _higher_ values, lines with a 45-degree inclination heading down for _lower_ values of each category).
 
-The second chart aims to show if the Covid-19 impact on our lives changed between 2020 and 2021. Each data point is a week; the light grey area is 2020, while the dark grey line is 2021. Again, I've been able to create a readable chart without the need to use any color. 
+The second chart aims to show if the Covid-19 impact on our lives changed between 2020 and 2021. Each data point is a week; the light grey area is 2020, while the dark grey line is 2021. Again, I've been able to create a readable chart without the need to use any color.
 
 ![Weekly Progression of Covid-19 in Italy: Comparison Between 2020 and 2021](/assets/uploads/screenshot-2021-06-29-at-19-49-04.png "Weekly Progression of Covid-19 in Italy: Comparison Between 2020 and 2021")
 
@@ -41,8 +41,51 @@ At a closer inspection, you'll notice that the grey area is, in fact, a pattern.
 
 ![Detail of the Pattern](/assets/uploads/screenshot-2021-06-29-at-19-50-00.png "Detail of the Pattern")
 
-How to create a new chart, and how to add data have been already shown in other posts. What I want to show here is how easy it is to add annotations, and _axis lines_ to highlight certain values. 
+## The code
 
-Annotations are extremely important for charts, either to explain the series themselves (like in these two examples, where I omitted axis' titles), or to help better understand the meaning of the data.
+How to create a new chart, and how to add data have been already shown in other posts. What I want to show here is how easy it is to add annotations, and _axis lines_ to highlight certain values.
+
+Annotations are extremely important for charts, either to explain the series themselves (like in these two examples, where I omitted axis' titles) or to help better understand the meaning of the data.
 
 With chrt, adding an annotation is as simple as
+
+    chart.add(
+          chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
+          .top(max)
+          .left(maxIndex)
+        );
+
+Where `.top()` sets the **vertical** position, and `.left()` the horizontal position. The variables `max` and `maxIndex` are **values**, not pixels. chrt takes care of converting your values into coordinates based on the scale that you defined when you added the data.
+
+And what about the markers ◉ visible in the second chart? And the position of the annotations? That's just a bit of CSS code. It is easy, in fact, to add a custom CSS class to the annotation object, and use `transform` rules and pseudo-classes to change the position and layout of each annotation:
+
+    chart.add(
+          chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
+          .top(max)
+          .left(maxObj.week)
+          .class('marker')
+          .class(position === 1 ? 'reverse' : 'normal')
+        );
+
+Here is the CSS:
+
+    .chrt-annotation.marker:after {
+    	bottom: -9px;
+    	content: '⦿';
+    	display: block;
+    	font-size: 12px;
+    	height: 12px;
+    	left: 50%;
+    	line-height: 12px;
+    	position: absolute;
+    	text-align: center;
+    	transform: translate3d(-50%, 0, 0);
+    }
+    
+    .chrt-annotation.marker.reverse:after {
+    	bottom: auto;
+    	top: -13px;
+    	transform: translate3d(-50%, 0, 0);
+    }
+
+I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll `transform` his position based on the CSS class name assigned.
