@@ -54,16 +54,19 @@ Annotations are extremely important for charts, either to explain the series the
 
 With chrt, adding an annotation is as simple as
 
+```javascript
     chart.add(
           chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
           .top(max)
           .left(maxIndex)
         );
+```
 
 Where `.top()` sets the **vertical** position, and `.left()` the horizontal position. The variables `max` and `maxIndex` are **values**, not pixels. chrt takes care of converting your values into coordinates based on the scale that you defined when you added the data.
 
 And what about the markers ◉ visible in the second chart? And the position of the annotations? That's just a bit of CSS code. It is easy, in fact, to add a custom CSS class to the annotation object, and use `transform` rules and pseudo-classes to change the position and layout of each annotation:
 
+```javascript
     chart.add(
           chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
           .top(max)
@@ -71,9 +74,11 @@ And what about the markers ◉ visible in the second chart? And the position of 
           .class('marker')
           .class(position === 1 ? 'reverse' : 'normal')
         );
+```
 
 Here is the CSS:
 
+```css
     .chrt-annotation.marker:after {
     	bottom: -9px;
     	content: '⦿';
@@ -92,7 +97,8 @@ Here is the CSS:
     	top: -13px;
     	transform: translate3d(-50%, 0, 0);
     }
+```
 
 I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.
 
-And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's equally easy: 
+And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's equally easy:
