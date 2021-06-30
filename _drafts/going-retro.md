@@ -88,4 +88,4 @@ Here is the CSS:
     	transform: translate3d(-50%, 0, 0);
     }
 
-I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the position of the ◉ based on the CSS class name assigned.
+I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.
