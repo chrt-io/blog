@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Imitating the best
-date: 2021-03-16 00:00:00 +0000
+date: 2021-03-16T00:00:00.000+00:00
 categories: ''
+author: Carlo Zapponi
 
 ---
 #### How can we create beautiful charts? Replicate the best!
