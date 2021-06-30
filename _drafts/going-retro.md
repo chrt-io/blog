@@ -3,6 +3,11 @@ layout: post
 title: Going Retro
 date: 2021-06-28 22:00:00 +0000
 categories: ''
+author: ''
+seo_and_social_networks:
+  description: ''
+  keywords: ''
+  banner_image: "/assets/uploads/screenshot-2021-06-29-at-19-49-04.png"
 
 ---
 The visual language of old data visualization always amazed me: being able to represent complex data with few elements and colors, and yet making it readable is an exciting challenge.
@@ -89,3 +94,5 @@ Here is the CSS:
     }
 
 I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.
+
+And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's equally easy: 
