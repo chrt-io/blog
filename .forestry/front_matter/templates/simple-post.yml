@@ -22,6 +22,26 @@ fields:
   config:
     required: false
   label: Author
+- name: seo_and_social_networks
+  type: field_group
+  config: {}
+  fields:
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  - name: keywords
+    type: text
+    config:
+      required: false
+    label: Keywords
+  - name: banner_image
+    type: file
+    config:
+      maxSize: 64
+    label: Banner Image
+  label: SEO and Social Networks
 pages:
 - _posts/2021-02-02-the-unfolding-of-chrt.md
 - _posts/2021-02-16-how-should-a-chrt-look-like.md
