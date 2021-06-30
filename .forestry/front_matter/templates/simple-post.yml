@@ -16,7 +16,7 @@ fields:
 - type: text
   name: categories
   label: categories
-  hidden: true
+  hidden: false
 - name: author
   type: text
   config:
