@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Data can be local
-date: 2021-03-03 00:00:00 +0000
+date: 2021-03-03T00:00:00.000+00:00
 categories: ''
+author: Carlo Zapponi
 
 ---
 Most of the chart libraries expect the coder to declare the data for the entire chart. The paper [A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html) states:
