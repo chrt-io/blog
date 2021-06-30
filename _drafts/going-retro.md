@@ -40,3 +40,9 @@ The second chart aims to show if the Covid-19 impact on our lives changed betwee
 At a closer inspection, you'll notice that the grey area is, in fact, a pattern.
 
 ![Detail of the Pattern](/assets/uploads/screenshot-2021-06-29-at-19-50-00.png "Detail of the Pattern")
+
+How to create a new chart, and how to add data have been already shown in other posts. What I want to show here is how easy it is to add annotations, and _axis lines_ to highlight certain values. 
+
+Annotations are extremely important for charts, either to explain the series themselves (like in these two examples, where I omitted axis' titles), or to help better understand the meaning of the data.
+
+With chrt, adding an annotation is as simple as
