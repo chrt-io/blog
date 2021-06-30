@@ -1,8 +1,9 @@
 ---
 layout: post
 title: How should a chrt look like?
-date: 2021-02-16 00:00:00 +0000
+date: 2021-02-16T00:00:00.000+00:00
 categories: ''
+author: Carlo Zapponi
 
 ---
 #### At **chrt** we are always very excited 👯 when we create new charts 📊. We love _neat and crisp_ 🤓 charts 📈.
