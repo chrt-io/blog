@@ -17,5 +17,10 @@ fields:
   name: categories
   label: categories
   hidden: true
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
 pages:
 - _posts/going-retro.md
