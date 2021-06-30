@@ -8,6 +8,7 @@ url: "https://blog.chrt.io" # the base hostname & protocol for your site, e.g. h
 twitter_username: chrt_io
 github_username:  chrt-io
 nonav: 1 # hide navigation for chrt blog
+google_analytics: G-1YTRCQ8L2P
 
 permalink: /:categories/:slug
 

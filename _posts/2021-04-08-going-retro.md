@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Going Retro
-date: 2021-06-28 22:00:00 +0000
+date: 2021-04-08 22:00:00 +0000
 categories: ''
-
+author: Simone Lippolis
 ---
 The visual language of old data visualization always amazed me: being able to represent complex data with few elements and colors, and yet making it readable is an exciting challenge.
 
-The web is full of different examples, [Nightingale](https://nightingaledvs.com), the online magazine from the [Data Visualization Society](https://www.datavisualizationsociety.org "DVS Website") has a lot of articles about the topic.
-
-Recently, the work that[ W.E.B. Du Bois presented at the 1900 World Fair in Paris gained a lot of visibility](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/ "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color"), even with the publication of a [monographic book](https://amzn.to/3x6IK0u "Visualizing Black America: The Color Line at the Turn of the Twentieth Century") with all his charts.
+The web is full of different examples: [Nightingale](https://nightingaledvs.com), the online magazine from the [Data Visualization Society](https://www.datavisualizationsociety.org "DVS Website") has a lot of articles about the topic. Recently, the work that[ W.E.B. Du Bois presented at the 1900 World Fair in Paris gained a lot of visibility](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/ "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color"), even with the publication of a [monographic book](https://amzn.to/3x6IK0u "Visualizing Black America: The Color Line at the Turn of the Twentieth Century") with all his charts.
 
 ![COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS](/assets/uploads/screenshot-2021-06-29-at-19-41-22.png "COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS")
 
@@ -49,43 +47,49 @@ Annotations are extremely important for charts, either to explain the series the
 
 With chrt, adding an annotation is as simple as
 
-    chart.add(
-          chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
-          .top(max)
-          .left(maxIndex)
-        );
+```javascript
+chart.add(
+      chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
+      .top(max)
+      .left(maxIndex)
+    );
+```
 
 Where `.top()` sets the **vertical** position, and `.left()` the horizontal position. The variables `max` and `maxIndex` are **values**, not pixels. chrt takes care of converting your values into coordinates based on the scale that you defined when you added the data.
 
 And what about the markers ◉ visible in the second chart? And the position of the annotations? That's just a bit of CSS code. It is easy, in fact, to add a custom CSS class to the annotation object, and use `transform` rules and pseudo-classes to change the position and layout of each annotation:
 
-    chart.add(
-          chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
-          .top(max)
-          .left(maxObj.week)
-          .class('marker')
-          .class(position === 1 ? 'reverse' : 'normal')
-        );
+```javascript
+chart.add(
+      chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
+      .top(max)
+      .left(maxObj.week)
+      .class('marker')
+      .class(position === 1 ? 'reverse' : 'normal')
+    );
+```
 
 Here is the CSS:
 
-    .chrt-annotation.marker:after {
-    	bottom: -9px;
-    	content: '⦿';
-    	display: block;
-    	font-size: 12px;
-    	height: 12px;
-    	left: 50%;
-    	line-height: 12px;
-    	position: absolute;
-    	text-align: center;
-    	transform: translate3d(-50%, 0, 0);
-    }
-    
-    .chrt-annotation.marker.reverse:after {
-    	bottom: auto;
-    	top: -13px;
-    	transform: translate3d(-50%, 0, 0);
-    }
+```javascript
+.chrt-annotation.marker:after {
+  bottom: -9px;
+  content: '⦿';
+  display: block;
+  font-size: 12px;
+  height: 12px;
+  left: 50%;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.chrt-annotation.marker.reverse:after {
+  bottom: auto;
+  top: -13px;
+  transform: translate3d(-50%, 0, 0);
+}
+```
 
 I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.

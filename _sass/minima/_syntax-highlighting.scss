@@ -3,10 +3,11 @@
  */
 .highlight {
   background: #fff;
+  margin: $spacing-unit 0;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: #fff;
   }
 
   .c     { color: #998; font-style: italic } // Comment
