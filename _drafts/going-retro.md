@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Going Retro
-date: 2021-06-28 22:00:00 +0000
+date: 2021-04-07 22:59:00 +0000
 categories: ''
-author: ''
+author: Simone Lippolis
 seo_and_social_networks:
   description: ''
   keywords: ''
