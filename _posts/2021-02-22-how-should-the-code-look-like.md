@@ -1,8 +1,9 @@
 ---
 layout: post
 title: How should the code look like?
-date: 2021-02-22 00:00:00 +0000
+date: 2021-02-22T00:00:00.000+00:00
 categories: ''
+author: Carlo Zapponi
 
 ---
 The first chart library I used (almost 15 years ago) was [jpgraph](https://jpgraph.net/) for PHP, then after too much customization of its code, I decided it was time to create my library. I did it with ActionScript and Flash, it was called **Atomicharts**, it was doing few things: linecharts, areacharts and barcharts. I truly enjoyed the experience of putting together the library.
