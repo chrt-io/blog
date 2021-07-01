@@ -8,8 +8,8 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$title-font-family: 'Source Sans Pro', sans-serif;
-$title-font-weight: 200;
+$title-font-family: 'Montserrat', sans-serif;
+$title-font-weight: 900;
 
 $spacing-unit:     40px !default;
 
@@ -20,6 +20,8 @@ $brand-color:      #2a7ae2 !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+$chrt-background: #2b4651;
 
 $color-highlight: rgb(250, 250, 131);
 
@@ -52,6 +54,5 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting",
-  "chrt/layout"
+  "minima/syntax-highlighting"
 ;

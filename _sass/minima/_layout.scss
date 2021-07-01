@@ -2,25 +2,55 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
+  background: $chrt-background url(http://chrt.io/images/background.jpg) top center no-repeat;
+  background-size: cover;
+  display: block;
+  filter: grayscale(.4);
+  height: 40px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  @media screen and (min-width:768px) {
+    height: 80px;
+  }
+
+  @media screen and (min-width:1024px) {
+    background-position: top center;
+    bottom: 0;
+    height: auto;
+    right: auto;
+    width: 240px;
+  }
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
+  background: transparent url(http://chrt.io/images/chrt.png) center center no-repeat;
+  background-position: center center;
+  background-size: contain;
+  color: transparent;
+  display: block;
+  height: 25px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -20000px;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 120px;
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
+  @media screen and (min-width:768px) {
+    height: 40px;
+  }
+
+  @media screen and (min-width:1024px) {
+    height: 40px;
+    left: 0;
+    top: 40px;
+    transform: none;
+    width: 240px !important;
   }
 }
 

@@ -59,7 +59,7 @@ Where `.top()` sets the **vertical** position, and `.left()` the horizontal posi
 
 And what about the markers ◉ visible in the second chart? And the position of the annotations? That's just a bit of CSS code. It is easy, in fact, to add a custom CSS class to the annotation object, and use `transform` rules and pseudo-classes to change the position and layout of each annotation:
 
-```javascript
+```js
 chart.add(
       chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
       .top(max)
@@ -71,7 +71,7 @@ chart.add(
 
 Here is the CSS:
 
-```javascript
+```css
 .chrt-annotation.marker:after {
   bottom: -9px;
   content: '⦿';
