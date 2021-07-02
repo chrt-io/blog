@@ -24,6 +24,14 @@
     right: auto;
     width: 240px;
   }
+
+  @media screen and (min-width:1280px) {
+    background-position: top center;
+    bottom: 0;
+    height: auto;
+    right: auto;
+    width: 360px;
+  }
 }
 
 .site-title {
@@ -50,7 +58,11 @@
     left: 0;
     top: 40px;
     transform: none;
-    width: 240px !important;
+    width: 240px;
+  }
+
+  @media screen and (min-width:1280px) {
+    width: 360px;
   }
 }
 
@@ -206,8 +218,14 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
-  flex: 1;
+  display: block;
+  margin: 0 40px;
+  max-width: 960px;
+  width: auto;
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 40px 0 100px;
+  }
 }
 
 .page-heading {
@@ -242,6 +260,7 @@
 /**
  * Posts
  */
+
 .post-header {
   margin-bottom: $spacing-unit;
 }

@@ -34,7 +34,11 @@ body {
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 0 0 0 260px;
+    padding-left: 240px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 360px;
   }
 }
 
@@ -77,7 +81,7 @@ img {
 }
 
 p > img:only-child {
-  border: 1px solid $text-color;
+  box-shadow: 0 0 0 10px $grey-color-light;
   margin: $spacing-unit / 2 0;
 }
 
@@ -200,30 +204,6 @@ pre {
   }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
 /**
  * Clearfix
  */
@@ -232,29 +212,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
-
 
 /**
  * Tables
