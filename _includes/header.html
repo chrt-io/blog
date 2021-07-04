@@ -1,13 +1,24 @@
 <header class="site-header" role="banner">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    <nav>
-      <ul>
-        <li><a href="{{ "/" | relative_url }}" title="Homepage">Home</a></li>
-        <li><a href="/news" title="News">News</a></li>
-        <li><a href="/archives" title="Archives">Archives</a></li>
-      </ul>
-      <div class="newsletter">
-        {% include tinyletter.html %}
+      <div class="switch">
+        <button id="switch" />
       </div>
-    </nav>
 </header>
+<nav>
+  <div class="navigation">
+    <ul>
+      <li><a href="{{ "/" | relative_url }}" title="Homepage">Home</a></li>
+      <li><a href="/news" title="News">News</a></li>
+      <li><a href="/archives" title="Archives">Archives</a></li>
+    </ul>
+    <div class="newsletter">
+      {% include tinyletter.html %}
+    </div>
+    <div class="social">
+      <ul>
+        <li><a href="https://twitter.com/chrt_io">Twitter</a></li>
+        <li><a href="https://instagram.com/chrt.io">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
