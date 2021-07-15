@@ -2,8 +2,8 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 'Petrona', serif;
-$base-font-size:   18px !default;
+$base-font-family: 'Montserrat', sans-serif;
+$base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -13,19 +13,35 @@ $title-font-weight: 900;
 
 $spacing-unit:     40px !default;
 
-$text-color:       #444 !default;
-$background-color: #fefefe !default;
-$brand-color:      #2a7ae2 !default;
-$logo-color: #34444a;
-$light-color: #8e9aa4;
+$color-1: #88949B;
+$color-2: #79B6C0;
+$color-3: #68D9CD;
+$color-4: #82F9BE;
+$color-5: #F9F871;
 
-$grey-color:       #8e9aa4 !default;
+$grey-1: #88949B;
+$grey-2: #69757C;
+$grey-3: #4C575E;
+$grey-4: #303B41;
+$grey-5: #172127;
+
+$light: #fefefe;
+
+$text-color:       $grey-5 !default;
+$background-color: $light !default;
+$brand-color:      $color-2 !default;
+$logo-color: $color-3;
+$light-color: $light;
+$nav-color: $grey-5;
+$social-color: $color-2;
+$shadow-color: $grey-1;
+
+$grey-color:       $grey-1 !default;
 $grey-color-light: lighten($grey-color, 25%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$chrt-background: #2b4651;
-
-$color-highlight: rgb(250, 250, 131);
+$chrt-background: $color-3;
+$color-highlight: $color-5;
 
 $table-text-align: left !default;
 

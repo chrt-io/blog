@@ -8,6 +8,7 @@
   filter: grayscale(.4);
   height: 40px;
   left: 0;
+  mix-blend-mode: luminosity;
   position: fixed;
   right: 0;
   top: 0;
@@ -83,9 +84,16 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 100;
 
   @media screen and (min-width:1024px) {
     z-index: 11;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    color: $nav-color;
   }
 }
 
@@ -105,11 +113,15 @@ nav {
   width: auto;
   z-index: 9;
 
+  @media screen and (min-width:768px) {
+    top: 80px;
+  }
+
   @media screen and (min-width:1024px) {
     background: transparent;
     opacity: 1;
     right: auto;
-    top: 60px;
+    top: 120px;
     transform: none;
     width: 240px;
     z-index: 11;
@@ -133,6 +145,10 @@ nav {
   ul {
     display: block;
     margin: 60px 40px;
+
+    @media screen and (min-width:1024px) {
+      margin-top: 0;
+    }
   }
 
   li {
@@ -146,10 +162,11 @@ nav {
   }
 
   .newsletter {
+    display: none;
     margin: 20px 40px;
 
     @media screen and (min-width:1024px) {
-      margin: 20px 20px;
+      display: block;
     }
   }
 
@@ -161,31 +178,13 @@ nav {
     right: 0;
     width: auto;
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width: 1024px) {
       right: auto;
-      width: 220px;
+      width: 240px;
     }
 
-    @media screen and (min-width:1280px) {
-      width: 320px;
-    }
-
-    ul {
-      display: flex;
-      margin: 0;
-    }
-
-    li {
-      display: inline-block;
-      flex: 0 0 50%;
-      font-size: 14px;
-      line-height: 22px;
-      margin-bottom: 0;
-      text-align: center;
-
-      @media screen and (min-width:1024px) {
-        color: $background-color;
-      }
+    @media screen and (min-width: 1280px) {
+      width: 340px;
     }
   }
 }
@@ -344,5 +343,198 @@ nav {
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
+  }
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .post {
+    flex: 0 0 100%;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 40%;
+    }
+  }
+}
+
+.post-meta {
+  color: $text-color;
+  font-family: $title-font-family;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.newest-post {
+  box-shadow: -40px 0 0 0 $color-highlight, 40px 0 0 $color-highlight;
+  display: block;
+  flex: 0 0 100%;
+  margin: 0 0 60px 0;
+  min-height: 60vh;
+  overflow: hidden;
+  padding-top: 60px;
+  position: relative;
+  width: auto;
+
+  &::after {
+    background: $color-highlight;
+    bottom: 0;
+    content: '';
+    left: 0;
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: -1;
+  }
+
+  .banner {
+    bottom: 0;
+    height: 100%;
+    filter: grayscale(1);
+    left: 0;
+    object-fit: cover;
+    opacity: .15;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+  h3 {
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 40px;
+    }
+  }
+
+  .post-meta {
+    margin: 0 0 40px 0;
+  }
+
+  .post-excerpt {
+    font-family: $title-font-family;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+    min-height: 30vh;
+    padding-top: 200px;
+
+    .post-excerpt {
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 300px;
+  }
+}
+
+.social {
+  a,
+  a:link,
+  a:visited {
+    color: $social-color;
+  }
+
+  @media screen and (min-width:1024px) {
+    right: auto;
+    width: 220px;
+  }
+
+  @media screen and (min-width:1280px) {
+    width: 320px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+
+    @media screen and (min-width:1024px) {
+    }
+  }
+
+  li {
+    display: inline-block;
+    flex: 0 0 30%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0;
+    text-align: center;
+
+    @media screen and (min-width:1024px) {
+      color: $background-color;
+      display: block;
+    }
+  }
+
+  a {
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+    text-transform: uppercase;
+  }
+}
+
+
+.newsletter {
+  a,
+  a:link,
+  label,
+  p {
+    font-size: 12px;
+
+    @media screen and (min-width:1024px) {
+      color: $background-color;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+    display: block;
+    margin: 60px 20px;
+  }
+}
+
+.site-footer {
+  background: $grey-2;
+  display: block;
+  margin: 0;
+  padding: 40px;
+
+  .newsletter {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
   }
 }
