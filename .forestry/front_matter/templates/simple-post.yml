@@ -41,6 +41,12 @@ fields:
     config:
       maxSize: 64
     label: Banner Image
+  - name: twitter_handle
+    type: text
+    config:
+      required: false
+    label: Twitter Handle
+    description: Your @username on Twitter
   label: SEO and Social Networks
 pages:
 - _posts/2021-02-02-the-unfolding-of-chrt.md
