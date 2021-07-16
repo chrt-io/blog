@@ -13,7 +13,7 @@ seo_and_social_networks:
   banner_image: "/assets/uploads/localdata.gif"
 
 ---
-The first chart library I used (almost 15 years ago) was [jpgraph](https://jpgraph.net/) for PHP, then after too much customization of its code, I decided it was time to create my library. I did it with ActionScript and Flash, it was called **Atomicharts**, it was doing few things: linecharts, areacharts and barcharts. I truly enjoyed the experience of putting together the library.
+The first chart library I used (almost 15 years ago) was [jpgraph](https://jpgraph.net/) for PHP, then after too much customization of its code, I decided it was time to create my library. I did it with ActionScript and Flash, it was called **Atomicharts**, it was doing few things: line charts, area charts, and bar charts. I truly enjoyed the experience of putting together the library.
 
 Then Javascript became the standard for everything web, and I spent a summer working with [Highcharts](https://www.highcharts.com/). At that time Highcharts was **canvas-based**, and we had to squeeze in a lot of time into the optimization of its code for IE9 🥶.
 
@@ -23,11 +23,11 @@ Most of the chart libraries start from a JSON-like config file, however, I don't
 
 I played with [R](https://www.r-project.org/) and [ggplot2](https://ggplot2.tidyverse.org/), I loved its way to declaratively creating graphics, based on **The Grammar of Graphics**, with the concept of components of the layered grammar ([A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html)).
 
-#### And here came **chrt**!
+###### And here came **chrt**!
 
-Inspired by ggplot2, d3 and [Scratch](https://scratch.mit.edu/), we started thinking about a way of coding charts more _casually_ without compromising on the level of details that could be customized.
+Inspired by ggplot2, d3, and [Scratch](https://scratch.mit.edu/), we started thinking about a way of coding charts more _casually_ without compromising on the level of details that could be customized.
 
-#### _How would I like to build a chart?_
+###### How would I like to build a chart?
 
 After some tinkering around I scribbled ✍️ down the following:
 
