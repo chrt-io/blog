@@ -22,7 +22,7 @@ At the same time, it defines layers as:
 
 And this is where we like ❤️‍🔥 the layered grammar.
 
-#### At the logic level, data can be _local_ to the visual item that shows it.
+###### At the logic level, data can be local to the visual item that shows it.
 
 With **chrt** we followed the principle that together with the more traditional approach of declaring the data at a chart level:
 
