@@ -10,6 +10,7 @@ seo_and_social_networks:
   banner_image: "/assets/uploads/screenshot-2021-06-29-at-19-49-04.png"
   twitter_handle: "@simonelippolis"
 twitter_handle: "@simonelippolis"
+post_categories: Blog
 
 ---
 The visual language of old data visualization always amazed me: being able to represent complex data with few elements and colors, and yet making it readable is an exciting challenge.
