@@ -5,14 +5,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5,user-scalable=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#F9F871">
-  <meta name="msapplication-TileColor" content="#F9F871">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+
+  <meta name="theme-color" content="#F9F871">
+  <meta name="msapplication-TileColor" content="#F9F871">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/android-icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="{%- if page.title -%}{{ page.title | escape }} | {%- endif -%}{{ site.title }}">
   <meta property="og:description" content="{%- if page.seo_and_social_networks.description -%}{{ page.seo_and_social_networks.description }}{%- else -%}{{ site.description }}{%- endif -%}">
@@ -21,4 +39,21 @@
   <meta property="og:image" content="{%- if page.seo_and_social_networks.image -%}{{ page.seo_and_social_networks.image }}{%- else -%}{{ site.logo }}{%- endif -%}">
   <meta name="description" content="{%- if page.seo_and_social_networks.description -%}{{ page.seo_and_social_networks.description }}{%- else -%}{{ site.description }}{%- endif -%}">
   <meta name="keywords" content="{{ site.keywords }}">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@chrt_io" />
+  <meta name="twitter:creator" content="{%- if page.twitter_handle -%}{{ page.twitter_handle }}{%- else -%}@chrt_io{%- endif -%}" />
 </head>
+
+<textarea style="width: 100%; height: 300px;">
+{{site.title}}
+{{ page.title}}
+{{ site.description }}
+{{ page.seo_and_social_networks.description }}
+{{  page.url  }}
+{{ site.logo }}
+{{ page.seo_and_social_networks.image }}
+{{ site.description }}
+{{ page.seo_and_social_networks.description }}
+{{ page.twitter_handle }}
+</textarea>
