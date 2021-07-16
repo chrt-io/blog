@@ -2,7 +2,7 @@
 layout: post
 title: How should the code look like?
 date: 2021-02-22T00:00:00.000+00:00
-categories: ''
+categories: Blog
 author: Carlo Zapponi
 post_categories: Blog
 twitter_handle: "@littleark"
