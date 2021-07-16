@@ -581,3 +581,12 @@ nav {
     text-transform: uppercase;
   }
 }
+
+.post-content h4,
+.post-content h6 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: $spacing-unit * 1.5 auto $spacing-unit * 2 auto;
+  max-width: 60%;
+  text-align: center;
+}

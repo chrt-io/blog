@@ -52,4 +52,4 @@ In the above ☝️ code snippet, we are adding two lines 📈 in the chart with
 
 ![](/assets/uploads/localdata.gif)
 
-#### It will be completely up to the developers to decide if the data will be _centralized_ or _decentralized_
+###### It will be completely up to the developers to decide if the data will be centralized or decentralized
