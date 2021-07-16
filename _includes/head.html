@@ -34,26 +34,13 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{%- if page.title -%}{{ page.title | escape }} | {%- endif -%}{{ site.title }}">
   <meta property="og:description" content="{%- if page.seo_and_social_networks.description -%}{{ page.seo_and_social_networks.description }}{%- else -%}{{ site.description }}{%- endif -%}">
-  <meta property="og:url" content="{{  page.url  }}">
+  <meta property="og:url" content="{{ site.url }}{{  page.url  }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:image" content="{%- if page.seo_and_social_networks.image -%}{{ page.seo_and_social_networks.image }}{%- else -%}{{ site.logo }}{%- endif -%}">
+  <meta property="og:image" content="{{ site.url }}{%- if page.seo_and_social_networks.banner_image -%}{{ page.seo_and_social_networks.banner_image }}{%- else -%}{{ site.logo }}{%- endif -%}">
   <meta name="description" content="{%- if page.seo_and_social_networks.description -%}{{ page.seo_and_social_networks.description }}{%- else -%}{{ site.description }}{%- endif -%}">
-  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="keywords" content="{%- if page.seo_and_social_networks.keywords -%}{{ page.seo_and_social_networks.keywords }}{%- else -%}{{ site.keywords }}{%- endif -%}">
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@chrt_io" />
   <meta name="twitter:creator" content="{%- if page.twitter_handle -%}{{ page.twitter_handle }}{%- else -%}@chrt_io{%- endif -%}" />
 </head>
-
-<textarea style="width: 100%; height: 300px;">
-{{site.title}}
-{{ page.title}}
-{{ site.description }}
-{{ page.seo_and_social_networks.description }}
-{{  page.url  }}
-{{ site.logo }}
-{{ page.seo_and_social_networks.image }}
-{{ site.description }}
-{{ page.seo_and_social_networks.description }}
-{{ page.twitter_handle }}
-</textarea>
