@@ -4,6 +4,13 @@ title: How should the code look like?
 date: 2021-02-22T00:00:00.000+00:00
 categories: ''
 author: Carlo Zapponi
+post_categories: Blog
+twitter_handle: "@littleark"
+seo_and_social_networks:
+  description: Most of the chart libraries start from a JSON-like config file, however,
+    I don't think as humans we think in config-files
+  keywords: chrt, chrt.io
+  banner_image: "/assets/uploads/localdata.gif"
 
 ---
 The first chart library I used (almost 15 years ago) was [jpgraph](https://jpgraph.net/) for PHP, then after too much customization of its code, I decided it was time to create my library. I did it with ActionScript and Flash, it was called **Atomicharts**, it was doing few things: linecharts, areacharts and barcharts. I truly enjoyed the experience of putting together the library.
