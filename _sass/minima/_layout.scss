@@ -584,8 +584,10 @@ nav {
 
 .post-content h4,
 .post-content h6 {
+  text-shadow: 2px 2px 0 $color-5;
   font-size: 24px;
   font-weight: 300;
+  line-height: 1;
   margin: $spacing-unit * 1.5 auto $spacing-unit * 2 auto;
   max-width: 60%;
   text-align: center;
