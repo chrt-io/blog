@@ -1,21 +1,21 @@
 title: The story of a ch(a)rt library
 email: sayhi@chrt.io
-description: >- # this means to ignore newlines
+description: >- 
   We are building a new fun to use javascript library for data visualization.
+keywords: >-
+  chrt, chrt.io, library, charting library, javascript, data visualization, dataviz
 domain: blog.chrt.io
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://blog.chrt.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: chrt_io
-github_username:  chrt-io
-nonav: 1 # hide navigation for chrt blog
 google_analytics: G-1YTRCQ8L2P
+logo: /assets/images/logo.png
 
-permalink: /:categories/:slug
 
 # Build settings
-# theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:year/:month/:day/:title:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default.

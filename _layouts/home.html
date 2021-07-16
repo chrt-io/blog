@@ -19,7 +19,7 @@ layout: default
               {%- endif -%}</p>
             </div>
             <div class="post-excerpt">{{ post.excerpt | strip_html  }}</div>
-            {%- if forloop.index == 1 && post.seo_and_social_networks.banner_image != '' -%}
+            {%- if forloop.index == 1 && post.seo_and_social_networks.banner_image -%}
                 <img src="{{ post.seo_and_social_networks.banner_image }}" alt="{{ post.seo_and_social_networks.description }}" class="banner" />
             {%- endif -%}
           </a>

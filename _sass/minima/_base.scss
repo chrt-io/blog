@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   padding: 80px 0 0 0;
 
+  &.layout-post,
   &.layout-home {
     padding-top: 40px;
 
@@ -99,8 +100,14 @@ img {
 }
 
 p > img:only-child {
-  // box-shadow: 4px 4px 0 0 $shadow-color;
-  margin: $spacing-unit / 2 0;
+  display: block;
+  max-height: 66vh;
+  margin: $spacing-unit / 2 auto;
+  max-width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 600px;
+  }
 }
 
 /**

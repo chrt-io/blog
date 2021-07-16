@@ -180,11 +180,11 @@ nav {
 
     @media screen and (min-width: 1024px) {
       right: auto;
-      width: 240px;
+      width: 220px;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 340px;
+      width: 320px;
     }
   }
 }
@@ -378,6 +378,7 @@ nav {
   margin-bottom: 10px;
 }
 
+.post-header,
 .newest-post {
   box-shadow: -40px 0 0 0 $color-highlight, 40px 0 0 $color-highlight;
   display: block;
@@ -465,15 +466,6 @@ nav {
     color: $social-color;
   }
 
-  @media screen and (min-width:1024px) {
-    right: auto;
-    width: 220px;
-  }
-
-  @media screen and (min-width:1280px) {
-    width: 320px;
-  }
-
   ul {
     display: flex;
     flex-direction: column;
@@ -536,5 +528,56 @@ nav {
 
   @media screen and (min-width: 1024px) {
     display: none;
+  }
+}
+
+.PageNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 60px 0;
+
+  .next,
+  .previous {
+    flex: 0 0 50%;
+    order: 1;
+    padding-top: 22px;
+    position: relative;
+    text-align: left;
+
+    &::after {
+      background: $text-color;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50%;
+    }
+  }
+
+  .next {
+    order: 2;
+    text-align: right;
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  & > div:only-child {
+    flex: 0 0 100%;
+
+    &::after {
+      width: 25%;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+    max-width: 75%;
+    text-transform: uppercase;
   }
 }
