@@ -1,0 +1,10 @@
+<div class="post-meta">
+  <time class="dt-published" datetime="{{ meta.date | date_to_xmlschema }}" itemprop="datePublished">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {{ meta.date | date: date_format }}
+  </time>
+  {%- if meta.author -%}
+  — <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ meta.author }}</span>
+  {%- if ispost and meta.twitter_handle and meta.twitter_handle != '' -%}&nbsp;(<a href="https://twitter.com/{{ meta.twitter_handle }}">{{ meta.twitter_handle }}</a>){%- endif -%}</span>
+  {%- endif -%}
+</div>
