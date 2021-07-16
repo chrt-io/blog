@@ -30,6 +30,6 @@ The [layered grammar of graphics]() at the foundation of ggplot2 is based on a s
 
 The system I was thinking about had to be simple, intuitive and with default settings to build beautifully crafted charts. Yes, _beautifully crafted._ I've experimented with many chart libraries and I still have to find one that is easy to customize and that enforces the best practices (yes, I'm talking to you, rotated axis titles!).
 
-#### The goal was outlined: a block-based javascript library to create beautiful charts in a fun way.
+###### The goal was outlined: a block-based javascript library to create beautiful charts in a fun way.
 
 And that's how **chrt** started
