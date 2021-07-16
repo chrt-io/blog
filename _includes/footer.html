@@ -1,25 +1,13 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-3">
-        <ul class="contact-list">
-            <li class="p-name">
-              {%- include newsletter.html -%}
-            </li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-    </div>
-
-  </div>
-
+<footer class="site-footer">
+  {% include tinyletter.html %}
+  {% include social.html %}
 </footer>
+<script>
+  const body = document.querySelector('body');
+  document.querySelector('#switch').addEventListener(
+    'click',
+    () => {
+      body.classList.toggle('nav');
+    }
+  )
+</script>
