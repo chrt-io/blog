@@ -28,13 +28,13 @@ With **chrt** we followed the principle that together with the more traditional 
 
     Chrt().data([...])
 
-We can also skip compltely the data first and declare it directly with the component that uses it and let **chrt** manage the data internally 🪄:
+We can also skip completely the data first and declare it directly with the component that uses it and let **chrt** manage the data internally 🪄:
 
     Chrt()
         .add(chrtColumns().data([...])
         .add(chrtLine().data[...])
 
-With this approach we can dinamically add components to the chart with their own data:
+With this approach we can dynamically add components to the chart with their own data:
 
     Chrt()
       .add(xAxis())
@@ -52,4 +52,4 @@ In the above ☝️ code snippet, we are adding two lines 📈 in the chart with
 
 ![](/assets/uploads/localdata.gif)
 
-#### It will be completely up to the developers to decide if the data will be _centralized_ or _decentralized_
+###### It will be completely up to the developers to decide if the data will be _centralized_ or _decentralized_
