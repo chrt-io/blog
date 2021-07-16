@@ -6,9 +6,11 @@ categories: ''
 author: Carlo Zapponi
 twitter_handle: "@littleark"
 seo_and_social_networks:
-  description: ''
-  keywords: ''
-  banner_image: ''
+  description: The system I was thinking about had to be simple, intuitive and with
+    default settings to build beautifully crafted charts. Yes, beautifully crafted.
+  keywords: chrt, history, foundation
+  banner_image: "/assets/uploads/logo.png"
+post_categories: Blog
 
 ---
 When I used [Scratch](https://scratch.mit.edu/) with my daughter, I noticed how intuitive is thinking in blocks (and nested blocks), and I wondered why we were not building charts similarly with javascript. It was fun and it helped to ideate through one of the most natural process: _addition_.
