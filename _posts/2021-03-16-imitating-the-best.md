@@ -15,7 +15,7 @@ seo_and_social_networks:
   banner_image: "/assets/uploads/screenshot-2021-06-27-at-18-37-23.png"
 
 ---
-#### How can we create beautiful charts? Replicate the best!
+###### How can we create beautiful charts? Replicate the best!
 
 From the first moment, we used **chrt** to clone charts that we liked from leading publications and inspiring books. The principle was simple: if we can reproduce the charts produced by NYT, Washington Post, Economist and others with **chrt,** then we will cover most of the best practices of data visualization.
 
@@ -46,4 +46,4 @@ The chart replicated with **chrt** includes:
 * labels
 * range indicator
 
-#### By simulating well designed and interesting charts with **chrt**, we could quickly implement many of the features that we wanted keeping a focus on quality.
+###### By simulating well-designed and interesting charts with **chrt**, we could quickly implement many of the features that we wanted keeping a focus on quality.
