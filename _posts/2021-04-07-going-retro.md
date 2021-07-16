@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Going Retro
-date: 2021-04-07 22:59:00 +0000
-categories: ''
+date: 2021-04-07T22:59:00.000+00:00
+categories: Blog
 author: Simone Lippolis
 seo_and_social_networks:
   description: How to add annotations on vintage-style charts made with chrt.io

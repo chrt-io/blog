@@ -2,7 +2,7 @@
 layout: post
 title: Data can be local
 date: 2021-03-03T00:00:00.000+00:00
-categories: ''
+categories: Blog
 author: Carlo Zapponi
 post_categories: Blog
 twitter_handle: "@littleark"
