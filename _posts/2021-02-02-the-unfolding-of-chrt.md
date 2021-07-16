@@ -4,6 +4,11 @@ title: The unfolding of chrt
 date: 2021-02-02T00:00:00.000+00:00
 categories: ''
 author: Carlo Zapponi
+twitter_handle: "@littleark"
+seo_and_social_networks:
+  description: ''
+  keywords: ''
+  banner_image: ''
 
 ---
 When I used [Scratch](https://scratch.mit.edu/) with my daughter, I noticed how intuitive is thinking in blocks (and nested blocks), and I wondered why we were not building charts similarly with javascript. It was fun and it helped to ideate through one of the most natural process: _addition_.
