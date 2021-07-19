@@ -58,11 +58,11 @@ Annotations are extremely important for charts, either to explain the series the
 With chrt, adding an annotation is as simple as
 
 ```javascript
-    chart.add(
-          chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
-          .top(max)
-          .left(maxIndex)
-        );
+chart.add(
+  chrtAnnotation(`<div>${label}: ${new Intl.NumberFormat('en-EN').format(maxObj.value)}</div>`)
+  .top(max)
+  .left(maxIndex)
+);
 ```
 
 Where `.top()` sets the **vertical** position, and `.left()` the horizontal position. The variables `max` and `maxIndex` are **values**, not pixels. chrt takes care of converting your values into coordinates based on the scale that you defined when you added the data.
@@ -70,38 +70,51 @@ Where `.top()` sets the **vertical** position, and `.left()` the horizontal posi
 And what about the markers ◉ visible in the second chart? And the position of the annotations? That's just a bit of CSS code. It is easy, in fact, to add a custom CSS class to the annotation object, and use `transform` rules and pseudo-classes to change the position and layout of each annotation:
 
 ```javascript
-    chart.add(
-          chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
-          .top(max)
-          .left(maxObj.week)
-          .class('marker')
-          .class(position === 1 ? 'reverse' : 'normal')
-        );
+chart.add(
+  chrtAnnotation(`<div>${label}:<br />${new Intl.NumberFormat('en-EN').format(maxObj.value)} Week of ${new Date(maxObj.datetime).getMonth() + 1}/${new Date(maxObj.datetime).getDate()}/${new Date(maxObj.datetime).getFullYear()}</div>`)
+  .top(max)
+  .left(maxObj.week)
+  .class('marker')
+  .class(position === 1 ? 'reverse' : 'normal')
+);
 ```
 
 Here is the CSS:
 
 ```css
-    .chrt-annotation.marker:after {
-    	bottom: -9px;
-    	content: '⦿';
-    	display: block;
-    	font-size: 12px;
-    	height: 12px;
-    	left: 50%;
-    	line-height: 12px;
-    	position: absolute;
-    	text-align: center;
-    	transform: translate3d(-50%, 0, 0);
-    }
-    
-    .chrt-annotation.marker.reverse:after {
-    	bottom: auto;
-    	top: -13px;
-    	transform: translate3d(-50%, 0, 0);
-    }
+.chrt-annotation.marker:after {
+  bottom: -9px;
+  content: '⦿';
+  display: block;
+  font-size: 12px;
+  height: 12px;
+  left: 50%;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.chrt-annotation.marker.reverse:after {
+  bottom: auto;
+  top: -13px;
+  transform: translate3d(-50%, 0, 0);
+}
 ```
 
 I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.
 
 And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's equally easy:
+
+```javascript
+chart.add(xAxisRange()
+  .dashed()
+  .stroke('#9a9a9a')
+  .strokeWidth(1)
+  .from(53)
+)
+```
+
+The `xAxisRange` adds a line (or area), to the `x-axis`; its `.from()` method is used to set the positions of this additional line. The integer `53` represents the 53rd week of the year: week numbers are, in fact, the unit for my `x-axis`. A similar `yAxisRange()` method is available to add horizontal lines and works exactly in the same way.
+
+In this article, we saw how to add and customize annotations, and how to add markers on the charts' axis, I hope you found it interesting. For any questions or comments, please reach out to us via Twitter [@chrt_io](https://twitter.com/chrt_io "Chrt on Twitter").
