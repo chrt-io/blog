@@ -13,11 +13,14 @@ logo: /assets/images/logo.png
 
 # Build settings
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
+  - jekyll-archives
 
-categories:
-  - News
-  - Blog
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  tag: '/archives/:name/'
 
 permalink: /:year/:month/:day/:title:output_ext
 

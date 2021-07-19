@@ -2,7 +2,7 @@
 layout: post
 title: The unfolding of chrt
 date: 2021-02-02T00:00:00.000+00:00
-categories: Blog
+category: Blog
 author: Carlo Zapponi
 twitter_handle: "@littleark"
 seo_and_social_networks:
