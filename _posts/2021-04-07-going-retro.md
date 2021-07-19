@@ -5,7 +5,8 @@ date: 2021-04-07T22:59:00.000+00:00
 categories: Blog
 author: Simone Lippolis
 seo_and_social_networks:
-  description: How to add annotations on vintage-style charts made with chrt.io
+  description: In this article, we show how to add and customize annotations, and
+    how to add markers on the charts' axis.
   keywords: chrt.io, chrt, chart, vintage, retro
   banner_image: "/assets/uploads/screenshot-2021-06-29-at-19-49-04.png"
   twitter_handle: "@simonelippolis"
