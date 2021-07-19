@@ -9,7 +9,7 @@ twitter_handle: "@littleark"
 seo_and_social_networks:
   description: How to assign data to series in your chrt chart
   keywords: 'data, chrt.io, chrt, '
-  banner_image: ''
+  banner_image: "/assets/uploads/38dfa537-772c-4c93-84e1-f05e283ef567.jpeg"
 
 ---
 Most of the chart libraries expect the coder to declare the data for the entire chart. The paper [A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html) states:
