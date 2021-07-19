@@ -35,6 +35,7 @@ $light-color: $light;
 $nav-color: $grey-5;
 $social-color: $color-2;
 $shadow-color: $grey-1;
+$link-highlight: lighten($color-4, 15%) !default;
 
 $grey-color:       $grey-1 !default;
 $grey-color-light: lighten($grey-color, 25%) !default;

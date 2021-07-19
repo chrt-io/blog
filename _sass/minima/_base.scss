@@ -192,14 +192,12 @@ blockquote {
   }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-  @include relative-font-size(0.75);
+  @include relative-font-size(0.85);
   border-radius: 3px;
 }
 

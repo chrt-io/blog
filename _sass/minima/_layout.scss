@@ -582,13 +582,28 @@ nav {
   }
 }
 
-.post-content h4,
-.post-content h6 {
-  text-shadow: 2px 2px 0 $color-5;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1;
-  margin: $spacing-unit * 1.5 auto $spacing-unit * 2 auto;
-  max-width: 75%;
-  text-align: center;
+.post-content {
+  h4,
+  h6 {
+    text-shadow: 2px 2px 0 $color-5;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    margin: $spacing-unit * 1.5 auto $spacing-unit * 2 auto;
+    max-width: 75%;
+    text-align: center;
+  }
+
+  a {
+    color: $text-color;
+    display: inline-block;
+    border-bottom: 1px solid $color-4;
+    box-shadow: inset 0 -10px $link-highlight;
+
+
+    &:active,
+    &:hover {
+      background: $link-highlight;
+    }
+  }
 }
