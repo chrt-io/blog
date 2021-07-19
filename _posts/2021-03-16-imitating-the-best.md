@@ -2,7 +2,7 @@
 layout: post
 title: Imitating the best
 date: 2021-03-16T00:00:00.000+00:00
-category: Blog
+categories: Blog
 author: Carlo Zapponi
 post_categories: Blog
 twitter_handle: "@littleark"

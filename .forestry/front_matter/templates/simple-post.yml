@@ -13,7 +13,7 @@ fields:
 - type: datetime
   name: date
   label: Date
-- name: category
+- name: categories
   type: select
   default: Blog
   config:
