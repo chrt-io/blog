@@ -23,11 +23,11 @@ Most of the chart libraries start from a JSON-like config file, however, I don't
 
 I played with [R](https://www.r-project.org/) and [ggplot2](https://ggplot2.tidyverse.org/), I loved its way to declaratively creating graphics, based on **The Grammar of Graphics**, with the concept of components of the layered grammar ([A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html)).
 
-###### And here came **chrt**!
+## And here came chrt!
 
 Inspired by ggplot2, d3, and [Scratch](https://scratch.mit.edu/), we started thinking about a way of coding charts more _casually_ without compromising on the level of details that could be customized.
 
-###### How would I like to build a chart?
+## How would I like to build a chart?
 
 After some tinkering around I scribbled ✍️ down the following:
 
