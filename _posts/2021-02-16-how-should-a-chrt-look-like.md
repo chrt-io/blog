@@ -13,7 +13,7 @@ seo_and_social_networks:
   banner_image: "/assets/uploads/screenshot-2021-06-27-at-18-06-51.png"
 
 ---
-###### At **chrt** we are always very excited 👯 when we create new charts 📊. We love _neat and crisp_ 🤓 charts 📈.
+###### At chrt we are always very excited 👯 when we create new charts 📊. We love neat and crisp 🤓 charts 📈.
 
 The big names 🧑‍🏫 👩‍🏫 (Spear, Bertin, Wilkinson, Tukey, Few, Tufte and others) have all described the best practices long ago, and still, for most of the charts that we see out in the wild 🦁 (literally in the wild), it seems like they have never known about the existence of these practices.
 
