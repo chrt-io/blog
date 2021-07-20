@@ -232,7 +232,7 @@ nav {
   width: auto;
 
   @media screen and (min-width: 1280px) {
-    margin: 0 40px 0 100px;
+    margin: 0 100px 0 100px;
   }
 }
 
@@ -279,6 +279,10 @@ nav {
   line-height: .85;
   margin-left: 40px;
   max-width: 55%;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 100px;
+  }
 }
 
 .post-content {
@@ -430,11 +434,16 @@ nav {
   
     @media screen and (min-width: 1280px) {
       font-size: 40px;
+      margin-left: 100px;
     }
   }
 
   .post-meta {
     margin: 0 40px 40px 40px;
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 100px;
+    }
   }
 
   .post-excerpt {
@@ -442,11 +451,15 @@ nav {
     font-weight: 400;
     margin: 0 40px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 100px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 80px;
-    min-height: 50vh;
+    min-height: 40vh;
     padding-top: 200px;
 
     .post-excerpt {
@@ -455,6 +468,7 @@ nav {
   }
 
   @media screen and (min-width: 1280px) {
+    margin: 0 -100px 60px -100px;
     min-height: 30vh;
     padding-top: 300px;
   }
