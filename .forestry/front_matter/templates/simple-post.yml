@@ -27,6 +27,10 @@ fields:
       file: 
       path: 
   label: Post Categories
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 - name: author
   type: text
   config:
