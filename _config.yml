@@ -12,9 +12,14 @@ logo: /assets/images/logo.png
 
 
 # Build settings
-plugins:
+# plugins:
 #  - jekyll-feed
-  - jekyll-archives
+
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
 
 jekyll-archives:
   enabled:
