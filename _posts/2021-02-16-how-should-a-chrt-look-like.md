@@ -3,9 +3,7 @@ layout: post
 title: How should a chrt look like?
 date: 2021-02-16T00:00:00.000+00:00
 categories: Blog
-author: Carlo Zapponi
-post_categories: Blog
-twitter_handle: "@littleark"
+author: Carlo
 seo_and_social_networks:
   description: At chrt we are always very excited when we create new charts. We love
     neat and crisp charts.

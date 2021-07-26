@@ -4,7 +4,7 @@
     {{ meta.date | date: date_format }}
   </time>
   {%- if meta.author -%}
-  — <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ meta.author }}</span>
-  {%- if ispost and meta.twitter_handle and meta.twitter_handle != '' -%}&nbsp;(<a href="https://twitter.com/{{ meta.twitter_handle }}">{{ meta.twitter_handle }}</a>){%- endif -%}</span>
+  — <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{site.data.members[meta.author].name}}</span>
+  {%- if ispost and site.data.members[meta.author].twitter and site.data.members[meta.author].twitter != '' -%}&nbsp;(<a href="https://twitter.com/{{ site.data.members[meta.author].twitter }}">@{{ site.data.members[meta.author].twitter }}</a>){%- endif -%}</span>
   {%- endif -%}
 </div>

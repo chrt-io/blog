@@ -3,9 +3,7 @@ layout: post
 title: Imitating the best
 date: 2021-03-16T00:00:00.000+00:00
 categories: Blog
-author: Carlo Zapponi
-post_categories: Blog
-twitter_handle: "@littleark"
+author: Carlo
 seo_and_social_networks:
   description: 'From the first moment, we used chrt to clone charts that we liked
     from leading publications and inspiring books. The principle was simple: if we

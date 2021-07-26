@@ -3,8 +3,7 @@ layout: post
 title: The unfolding of chrt
 date: 2021-02-02T00:00:00.000+00:00
 categories: Blog
-author: Carlo Zapponi
-twitter_handle: "@littleark"
+author: Carlo
 seo_and_social_networks:
   description: The system I was thinking about had to be simple, intuitive and with
     default settings to build beautifully crafted charts. Yes, beautifully crafted.

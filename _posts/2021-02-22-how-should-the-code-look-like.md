@@ -3,9 +3,7 @@ layout: post
 title: How should the code look like?
 date: 2021-02-22T00:00:00.000+00:00
 categories: Blog
-author: Carlo Zapponi
-post_categories: Blog
-twitter_handle: "@littleark"
+author: Carlo
 seo_and_social_networks:
   description: Most of the chart libraries start from a JSON-like config file, however,
     I don't think as humans we think in config-files

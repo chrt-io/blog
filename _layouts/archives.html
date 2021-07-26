@@ -24,7 +24,7 @@ layout: default
 
 {% assign theCategory = 'Blog' %}
 {% for theCategory in page.categories %} 
-    {% assign news = site.news | where:"category", theCategory %} 
+    {% assign blog = site.news | where:"category", theCategory %} 
       {% for page in news %}
          <li>
          <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
