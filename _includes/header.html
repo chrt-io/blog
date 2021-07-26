@@ -7,11 +7,11 @@
 <nav>
   <div class="navigation">
     <ul>
-      <li><a href="{{ "/" | relative_url }}" title="Blog">Blog</a></li>
+      <li><a href="{{ "/" | relative_url }}" title="Blog">Latest Posts</a></li>
       {% comment %}
-      <li><a href="/category/news" title="News">News</a></li>
-      <li><a href="/category/blog" title="Archives">Archives</a></li>
+      <li><a href="/news" title="News">News</a></li>
       {% endcomment %}
+      <li><a href="/archives" title="Blog Archives">Blog Archives</a></li>
     </ul>
     {% include tinyletter.html %}
     {% include social.html %}

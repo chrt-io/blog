@@ -637,7 +637,7 @@ nav {
   }
 }
 
-.archive {
+.archives {
   h1 {
     @include relative-font-size(3);
     letter-spacing: -1px;
@@ -646,3 +646,4 @@ nav {
     max-width: 55%;
   }
 }
+
