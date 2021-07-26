@@ -3,13 +3,7 @@ layout: post
 title: Going Retro
 date: 2021-04-07T22:59:00.000+00:00
 categories: Blog
-tags:
-  - chrt
-  - retro
-  - texture
-  - pattern
-  - monochrome chart
-author: Simone Lippolis
+author: Simone
 seo_and_social_networks:
   description: In this article, we show how to add and customize annotations, and
     how to add markers on the charts' axis.
@@ -18,6 +12,10 @@ seo_and_social_networks:
   twitter_handle: "@simonelippolis"
 twitter_handle: "@simonelippolis"
 post_categories: Blog
+tags:
+- vintage
+- retro
+- chrt
 
 ---
 The visual language of old data visualization always amazed me: being able to represent complex data with few elements and colors, and yet making it readable is an exciting challenge.
