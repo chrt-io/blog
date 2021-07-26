@@ -32,16 +32,19 @@ fields:
   default: []
   label: Tags
 - name: author
-  type: text
+  type: select
+  default: []
   config:
     required: false
+    options:
+    - Carlo
+    - Simone
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Author
-- name: twitter_handle
-  type: text
-  config:
-    required: false
-  label: Twitter Handle
-  description: Your Twitter @username
 - name: seo_and_social_networks
   type: field_group
   config: {}
