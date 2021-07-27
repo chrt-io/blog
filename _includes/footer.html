@@ -10,4 +10,22 @@
       body.classList.toggle('nav');
     }
   )
+  const images = document.querySelectorAll('.post-content img');
+  images.forEach((i) => {
+    i.style.cursor = 'zoom-in';
+    i.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = i.getAttribute('src');
+      const alt = i.getAttribute('alt');
+      const title = i.getAttribute('title');
+      const lightbox = document.createElement('div');
+      lightbox.classList.add('lightbox')
+      lightbox.innerHTML = `<img src="${src}" alt="${alt}" alt="${title} "/>`
+      document.body.appendChild(lightbox);
+      lightbox.addEventListener('click', () => {
+        lightbox.removeEventListener('click', () => {}, true);
+        lightbox.parentNode.removeChild(lightbox);
+      }, true);
+    });
+  });
 </script>
