@@ -18,3 +18,4 @@ seo_and_social_networks:
   banner_image: "/assets/uploads/screenshot-2021-07-27-at-14-36-43.png"
 
 ---
+The [Sanremo Music Festival](https://en.wikipedia.org/wiki/Sanremo_Music_Festival "Sanremo Music Festiva on Wikipedia") is an important mundane event in Italy since the 1950s. Every year, soon after the Christmas break is over, new singers and old _chanteurs_ gather in Sanremo, for a week-long competition. The Festival has been the first real _televised_ pop event in Italy, and it's an important part of Italian pop culture. During its seventy-years history, Sanremo's stage hosted almost all the top Italian pop singers, [Eurovision](https://en.wikipedia.org/wiki/Eurovision_Song_Contest "Eurovision Song Contest on Wikipedia") winners, and a lot of foreign guests (including Louis Armstrong, Elton John, Eminem, REM, Queen, and many others).
