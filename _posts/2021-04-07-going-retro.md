@@ -5,8 +5,8 @@ date: 2021-04-07T22:59:00.000+00:00
 categories: Blog
 author: Simone
 seo_and_social_networks:
-  description: In this article, we show how to add and customize annotations, and
-    how to add markers on the charts' axis.
+  description: In this article, we show how to add and customize annotations and how
+    to add markers on the charts' axis.
   keywords: chrt.io, chrt, chart, vintage, retro
   banner_image: "/assets/uploads/screenshot-2021-06-29-at-19-49-04.png"
 post_categories: Blog
@@ -16,19 +16,19 @@ tags:
 - chrt
 
 ---
-The visual language of old data visualization always amazed me: being able to represent complex data with few elements and colors, and yet making it readable is an exciting challenge.
+The visual language of old data visualization always amazed me: being able to represent complex data with a few elements and colors, and yet making it readable, is an exciting challenge.
 
-The web is full of different examples, [Nightingale](https://nightingaledvs.com), the online magazine from the [Data Visualization Society](https://www.datavisualizationsociety.org "DVS Website") has a lot of articles about the topic.
+The web is full of different examples, [Nightingale](https://nightingaledvs.com), the online magazine from the [Data Visualization Society](https://www.datavisualizationsociety.org "DVS Website") has a lot of articles on this topic.
 
 Recently, the work that[ W.E.B. Du Bois presented at the 1900 World Fair in Paris gained a lot of visibility](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/ "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color"), even with the publication of a [monographic book](https://amzn.to/3x6IK0u "Visualizing Black America: The Color Line at the Turn of the Twentieth Century") with all his charts.
 
 ![COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS](/assets/uploads/screenshot-2021-06-29-at-19-41-22.png "COMPARATIVE RATE OF INCREASE OF THE WHITE AND NEGRO ELEMENTS OF THE POPULATION OF THE UNITED STATES - PRINCETON ARCHITECTURAL PRESS")
 
-Another name that is often cited when talking about _Historical Data Visualization_ is [Charles Minard](https://en.wikipedia.org/wiki/Charles_Joseph_Minard "Charles Minard on Wikipedia"), who created the chart that someone calls [_The Best Graphic Ever Produced_](https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history "The Underappreciated Man Behind the “Best Graphic Ever Produced”"), illustrating Napoleon's travel to Russia during his 1812 campaign.
+Another name that is often mentioned when talking about _Historical Data Visualization_ is [Charles Minard](https://en.wikipedia.org/wiki/Charles_Joseph_Minard "Charles Minard on Wikipedia"), who created the chart that someone calls [_The Best Graphic Ever Produced_](https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history "The Underappreciated Man Behind the “Best Graphic Ever Produced”"), illustrating Napoleon's travel to Russia during his 1812 campaign.
 
 ![By Charles Minard (1781-1870), Public Domain](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Minard.png/1600px-Minard.png "By Charles Minard (1781-1870), Public Domain")
 
-To be clear: I'm not comparing the charts I'll show in few lines to these great examples of complex data visualizations; I'm just explaining why when I have been asked to test chrt, I chose to try to replicate this _retrò_ feeling.
+To be clear: I'm not comparing the charts I'll show in few lines to these great examples of complex data visualizations; I'm just explaining why when I have been asked to test chrt, I chose to try and replicate this _retrò_ feeling.
 
 ## The data
 
@@ -54,7 +54,7 @@ At a closer inspection, you'll notice that the grey area is, in fact, a pattern.
 
 ## The code
 
-How to create a new chart, and how to add data have been already shown in other posts. What I want to show here is how easy it is to add annotations, and _axis lines_ to highlight certain values.
+Creating a new chart and adding data are both topics that have already been illustrated in other posts. What I want to show here is how easy it is to add annotations and _axis lines_ to highlight certain values.
 
 Annotations are extremely important for charts, either to explain the series themselves (like in these two examples, where I omitted axis' titles) or to help better understand the meaning of the data.
 
@@ -105,9 +105,9 @@ Here is the CSS:
 }
 ```
 
-I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I'll change the CSS properties of the ◉ based on the class name assigned.
+I use a `position` variable to choose if the annotation should be shown at the top or at the bottom of the data point, and then I change the CSS properties of the ◉ based on the class name assigned.
 
-And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's equally easy:
+And what about the dashed lines highlighting the peaks or the milestones? With chrt, it's just as easy:
 
 ```javascript
 chart.add(xAxisRange()
@@ -118,6 +118,6 @@ chart.add(xAxisRange()
 )
 ```
 
-The `xAxisRange` adds a line (or area), to the `x-axis`; its `.from()` method is used to set the positions of this additional line. The integer `53` represents the 53rd week of the year: week numbers are, in fact, the unit for my `x-axis`. A similar `yAxisRange()` method is available to add horizontal lines and works exactly in the same way.
+The `xAxisRange` adds a line (or area), to the `x-axis`; its `.from()` method is used to set the positions of this additional line. The integer `53` represents the 53rd week of the year: week numbers are, in fact, the unit for my `x-axis`. A similar `yAxisRange()` method is available to add horizontal lines and works in the exact same way.
 
-In this article, we saw how to add and customize annotations, and how to add markers on the charts' axis, I hope you found it interesting. For any questions or comments, please reach out to us via Twitter [@chrt_io](https://twitter.com/chrt_io "Chrt on Twitter").
+In this article, we discussed how to add and customize annotations, and how to add markers on the charts' axis. I hope you found it interesting. For any questions or comments, please reach out to us via Twitter [@chrt_io](https://twitter.com/chrt_io "Chrt on Twitter").
