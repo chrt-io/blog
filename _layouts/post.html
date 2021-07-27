@@ -19,6 +19,12 @@ layout: default
     {{ content }}
   </div>
 
+  {% comment %}
+  <div class="post-comments">
+    {% include post-comments.html %}
+  </div>
+  {% endcomment %}
+
   <div class="PageNavigation">
     {% if page.previous.url %}
       <div class="previous">
