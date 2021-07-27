@@ -9,7 +9,7 @@ tags:
 - entertainment
 - chrt
 author: Simone
-title: 'Sanremo Music Festival visualization: adding colors to chrt'
+title: 'Sanremo Music Festival: adding colors to chrt'
 date: 2021-07-24 22:00:00 +0000
 seo_and_social_networks:
   description: With some creativity it is possible to use chrt to create unusual charts.
