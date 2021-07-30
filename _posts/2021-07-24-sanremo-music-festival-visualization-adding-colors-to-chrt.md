@@ -28,7 +28,7 @@ Traditionally, the event is hosted by a famous anchorman helped by one or more _
 
 As you can see, this is not a standard chart: to create it we stacked five `.chrtPoint()` charts one on top of the other.
 
-The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, artistic directors, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the number for each gender.
+The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, artistic directors, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the count of people for each gender.
 
 ![](/assets/uploads/screenshot-2021-07-29-at-16-59-13.png)
 
@@ -99,7 +99,7 @@ I created a separate `.chrtPoint()` for each series, in order to make it easier 
 ]
 ```
 
-Where `ym`, `yf`, and `yg` represent the number of males, females, and groups for each year.
+Where `ym`, `yf`, and `yg` represent the number of males, females, and bands for each year.
 
 The following charts show a breakdown of the data, each one representing one of the _professionalities_ included in the global  overview: hosts (_conduttori_), assistants (_co-conduttori_, or _vallette_), artistic directors (_direttori artistici_), and winners (_vincitori_).
 
@@ -107,7 +107,7 @@ The following charts show a breakdown of the data, each one representing one of 
 
 Chrt does not provide a built-in method to create _dot-strips_, but creating one with the tools we have it's pretty easy: **Each dot-strip is nothing more than a** `.chrtPoint()` **with a** `y` **value hardcoded to** `0`, and the radius of each point is proportional to the number we want to represent for that year.
 
-This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while **the roles of power** (like artistic director and host) **are dominated by men**. Note how in seventy years of history, there has been just one woman acting as artistic director.
+This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while **the roles of power** (like artistic director and host) **are dominated by men**. Note how in **seventy years of history, there has been just one woman acting as artistic director**.
 
 From a code perspective creating these dot-strips is easy. After creating a chart, you can simply add the series, assigning the correct properties to each point:
 
