@@ -26,7 +26,7 @@ Traditionally, the event is hosted by a famous anchorman helped by one or more _
 
 ![Gender representation in the Sanremo Music Festival](/assets/uploads/screenshot-2021-07-27-at-15-13-41.png "Gender representation in the Sanremo Music Festival")
 
-As you can see, this is not a standard chart: to create it we stacked four `chrtPoint()` charts one on top of the other.
+As you can see, this is not a standard chart: to create it we stacked four `.chrtPoint()` charts one on top of the other.
 
 The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, co-hosts, producers, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the number for each gender.
 
@@ -36,10 +36,11 @@ The missing y-axis labels are replaced with annotations, that highlight the most
 
 ![](/assets/uploads/screenshot-2021-07-29-at-17-02-44.png)This helps us to highlight one of the many inconsistencies in the story of the Festival: 2019 has been the year with the higher number of women (nine), but all of them were _vallette_.
 
-Creating a `chrtPoint` chart is easy, and can be done in few simple steps.
+Creating a `.chrtPoint()` chart is easy, and can be done in few simple steps.
 
 First, you create a chart, and define its global properties:
 
+```javascript
     const chart = new chrt.Chrt()
       .node(document.querySelector('#global'))
       .svg()
@@ -55,3 +56,48 @@ First, you create a chart, and define its global properties:
         right: 30,
         top: 10,
       })
+```
+
+And then, you simply add a `.chrtPoint()` specifying your data source, and how to use it:
+
+```javascript
+chart.add(
+  chrt.chrtPoints()
+  .data(points.map(d => ({ x: d.x, y: d.ym, })).filter(d => d.y > 0))
+  .color(M)
+  .radius(5)
+  .stroke(S)
+  .strokeWidth(1)
+).add(
+  chrt.chrtPoints()
+  .data(points.map(d => ({ x: d.x, y: d.yf, })).filter(d => d.y > 0))
+  .color(F)
+  .radius(5)
+  .stroke(S)
+  .strokeWidth(1)
+).add(
+  chrt.chrtPoints()
+  .data(points.map(d => ({ x: d.x, y: d.yg, })).filter(d => d.y > 0))
+  .color(G)
+  .radius(5)
+  .stroke(S)
+  .strokeWidth(1)
+);
+```
+
+I created a separate `.chrtPoint()` for each series, in order to make it easier to customize the point's `.color()`. My data-source has the following format:
+
+```json
+[
+  {
+  	x: [Integer],
+    ym: [Integer],
+    yf: [Integer],
+    yg: [Integer],
+  },
+]
+```
+
+Where `ym`, `yf`, and `yg` represent the number of males, females, and groups for each year.
+
+The following charts show a breakdown of the data, each one representing one of the _professionalities_ included in the global  overview: hosts (_conduttori_), assistants (_co-conduttori_, or _vallette_), artistic directors (_direttori artistici_), and winners (_vincitori_).
