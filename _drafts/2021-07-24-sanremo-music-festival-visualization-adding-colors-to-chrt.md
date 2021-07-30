@@ -90,10 +90,10 @@ I created a separate `.chrtPoint()` for each series, in order to make it easier 
 ```json
 [
   {
-    x: Int,
-    ym: Int,
-    yf: Int,
-    yg: Int,
+    "x": Int,
+    "ym": Int,
+    "yf": Int,
+    "yg": Int,
   },
 ]
 ```
