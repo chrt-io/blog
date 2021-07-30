@@ -90,7 +90,7 @@ I created a separate `.chrtPoint()` for each series, in order to make it easier 
 ```json
 [
   {
-  	x: [Integer],
+	x: [Integer],
     ym: [Integer],
     yf: [Integer],
     yg: [Integer],
@@ -101,3 +101,23 @@ I created a separate `.chrtPoint()` for each series, in order to make it easier 
 Where `ym`, `yf`, and `yg` represent the number of males, females, and groups for each year.
 
 The following charts show a breakdown of the data, each one representing one of the _professionalities_ included in the global  overview: hosts (_conduttori_), assistants (_co-conduttori_, or _vallette_), artistic directors (_direttori artistici_), and winners (_vincitori_).
+
+![](/assets/uploads/screenshot-2021-07-30-at-10-58-43.png)Chrt does not provide a built-in method to create _dot-strips_, but creating one with the tools we have it's pretty easy: Each dot-strip is nothing than a `.chrtPoint()` with a `y` value hardcoded to `0`, and the radius of each point is proportional to the number we want to represent for that year.
+
+This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while the _roles of power_ (like artistic director and host) are dominated by men. Note how in seventy years of history, there has been just one woman acting as artistic director.
+
+From a code perspective creating these dot-strips is easy. After creating a chart, you can simply add the series, assigning the correct properties to each point:
+
+```javascript
+.add(
+  chrt.chrtPoints()
+  .data(points.map(d => ({ x: d.x, y: 0, ys: d.ym, })))
+  .color(M)
+  .radius(d => d.ys)
+  .stroke(S)
+  .strokeWidth(1)
+)
+```
+
+In this case the data-source is different, and `ys` represents the number of persons of the currently selected gender over the total for each year.
+
