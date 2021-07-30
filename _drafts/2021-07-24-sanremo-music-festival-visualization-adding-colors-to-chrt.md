@@ -102,9 +102,11 @@ Where `ym`, `yf`, and `yg` represent the number of males, females, and groups fo
 
 The following charts show a breakdown of the data, each one representing one of the _professionalities_ included in the global  overview: hosts (_conduttori_), assistants (_co-conduttori_, or _vallette_), artistic directors (_direttori artistici_), and winners (_vincitori_).
 
-![](/assets/uploads/screenshot-2021-07-30-at-10-58-43.png)Chrt does not provide a built-in method to create _dot-strips_, but creating one with the tools we have it's pretty easy: Each dot-strip is nothing than a `.chrtPoint()` with a `y` value hardcoded to `0`, and the radius of each point is proportional to the number we want to represent for that year.
+![](/assets/uploads/screenshot-2021-07-30-at-10-58-43.png)
 
-This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while the _roles of power_ (like artistic director and host) are dominated by men. Note how in seventy years of history, there has been just one woman acting as artistic director.
+Chrt does not provide a built-in method to create _dot-strips_, but creating one with the tools we have it's pretty easy: Each dot-strip is nothing than a `.chrtPoint()` with a `y` value hardcoded to `0`, and the radius of each point is proportional to the number we want to represent for that year.
+
+This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while **the roles of power** (like artistic director and host) **are dominated by men**. Note how in seventy years of history, there has been just one woman acting as artistic director.
 
 From a code perspective creating these dot-strips is easy. After creating a chart, you can simply add the series, assigning the correct properties to each point:
 
@@ -119,7 +121,7 @@ From a code perspective creating these dot-strips is easy. After creating a char
 )
 ```
 
-In this case the data-source is different, and `d.ys` (the `.radius()` of each point) represents the number of persons of the currently selected gender over the total for each year.
+In this case the data-source is different, and `d.ys` (the `.radius()` of each point) represents the number of persons of the currently selected gender over the total for each year. Each chart shows three separate series, one for each group. Overlapping items remain visible because I applied a `mix-blend-mode` CSS property to the discs.
 
 The visualization is structured to have five Chrt `.chrtPoint()` charts one on top of the other. Size, positions, and margins are defined via CSS in order to harmonize the different charts into one, large visualization.
 
