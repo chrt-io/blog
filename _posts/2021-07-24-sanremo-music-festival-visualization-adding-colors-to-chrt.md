@@ -28,7 +28,7 @@ Traditionally, the event is hosted by a famous anchorman helped by one or more _
 
 As you can see, this is not a standard chart: to create it we stacked five `.chrtPoint()` charts one on top of the other.
 
-The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, producers, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the number for each gender.
+The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, artistic directors, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the number for each gender.
 
 ![](/assets/uploads/screenshot-2021-07-29-at-16-59-13.png)
 
