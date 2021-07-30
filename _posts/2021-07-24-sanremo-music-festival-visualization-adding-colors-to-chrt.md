@@ -122,7 +122,7 @@ From a code perspective creating these dot-strips is easy. After creating a char
 )
 ```
 
-In this case the data-source is different, and `d.ys` (the `.radius()` of each point) represents the number of persons of the currently selected gender over the total for each year. Each chart shows three separate series, one for each group. Overlapping items remain visible because I applied a `mix-blend-mode` CSS property to the discs.
+In this case the format of the data-source is different, and `d.ys` (the `.radius()` of each point) represents the number of persons of the currently selected gender over the total for each year. Each chart shows three separate series, one for each group. Overlapping items remain visible because I applied a `mix-blend-mode` CSS property to the discs.
 
 The visualization is structured to have five Chrt `.chrtPoint()` charts one on top of the other. **Size, positions, and margins are defined via CSS in order to harmonize the different charts into one, large visualization**.
 
