@@ -119,5 +119,8 @@ From a code perspective creating these dot-strips is easy. After creating a char
 )
 ```
 
-In this case the data-source is different, and `ys` represents the number of persons of the currently selected gender over the total for each year.
+In this case the data-source is different, and `d.ys` (the `.radius()` of each point) represents the number of persons of the currently selected gender over the total for each year.
 
+The visualization is structured to have five Chrt `.chrtPoint()` charts one on top of the other. Size, positions, and margins are defined via CSS in order to harmonize the different charts into one, large visualization.
+
+I hope you enjoyed reading how our plot about the Sanremo Music Festival has been created; I also hope this article gave you some idea on how to approach this kind of visualization. For any comment or hint, please feel free to reach us via Twitter: [@chrt_io](https://twitter.com/chrt_io "Chart.io on Twitter").
