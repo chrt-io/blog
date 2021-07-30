@@ -126,4 +126,4 @@ In this case the format of the data-source is different, and `d.ys` (the `.radiu
 
 The visualization is structured to have five Chrt `.chrtPoint()` charts one on top of the other. **Size, positions, and margins are defined via CSS in order to harmonize the different charts into one, large visualization**.
 
-I hope you enjoyed reading how our plot about the Sanremo Music Festival has been created; I also hope this article gave you some idea on how to approach this kind of visualization. **For any comment or hint**, please feel free to reach us via Twitter: [@chrt_io](https://twitter.com/chrt_io "Chart.io on Twitter").
+I hope you enjoyed reading how our plot about the Sanremo Music Festival has been created; I also hope this article gave you some idea on how to approach this kind of visualization. **For any comments, questions, or hints**, please feel free to write to us on Twitter: [@chrt_io](https://twitter.com/chrt_io "Chart.io on Twitter").
