@@ -26,16 +26,16 @@ Traditionally, the event is hosted by a famous male anchorman supported by one o
 
 ![Gender representation in the Sanremo Music Festival](/assets/uploads/screenshot-2021-07-27-at-15-13-41.png "Gender representation in the Sanremo Music Festival")
 
-As you can see, this is not a standard chart: to create it we stacked five `.chrtPoint()` charts one on top of the other.
+As you can see, this is not a standard chart: to create it we stacked five `.chrtPoint()` charts on top of each other.
 
-The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, artistic directors, winners) worked in each edition of the festival. The x-axis represents the time (one edition each year, starting from 1951), while the y-axis represents the count of people for each gender.
+The first one shows an overview of how many male (blue) and female (magenta) professionals (hosts, assistants, artistic directors, winners) worked in each edition of the festival. The x-axis represents time (one edition each year, starting from 1951), while the y-axis shows the number of people for each gender.
 
 ![](/assets/uploads/screenshot-2021-07-29-at-16-59-13.png)
 
-The missing y-axis labels are replaced with annotations, that highlight the most important data, giving some context.
+The missing y-axis labels are replaced with annotations highlighting the most significant data to give some context.
 
 ![](/assets/uploads/screenshot-2021-07-29-at-17-02-44.png)  
-This helps us to highlight one of the many inconsistencies in the story of the Festival: 2019 has been the year with the higher number of women (nine), but all of them were _vallette_.
+This helps us highlight one of the many inconsistencies in the history of the Festival: 2019 has been the year with the highest number of women ever (nine), yet all of them were _vallette_.
 
 Creating a `.chrtPoint()` chart is easy, and can be done in few simple steps.
 
@@ -107,7 +107,7 @@ The following charts show a breakdown of the data, each one representing one of 
 
 Chrt does not provide a built-in method to create _dot-strips_, but creating one with the tools we have it's pretty easy: **Each dot-strip is nothing more than a** `.chrtPoint()` **with a** `y` **value hardcoded to** `0`, and the radius of each point is proportional to the number we want to represent for that year.
 
-This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while **the roles of power** (like artistic director and host) **are dominated by men**. Note how in **seventy years of history, there has been just one woman acting as artistic director**.
+This view allows us to better understand how genders are represented by role, highlighting some non-unexpected facts: women are _relegated_ to act as assistants, while **the roles of power** (like artistic director and host) **are dominated by men**. Note how in **seventy years of history, there has been just one woman acting as the artistic director**.
 
 From a code perspective creating these dot-strips is easy. After creating a chart, you can simply add the series, assigning the correct properties to each point:
 
@@ -126,4 +126,4 @@ In this case the format of the data-source is different, and `d.ys` (the `.radiu
 
 The visualization is structured to have five Chrt `.chrtPoint()` charts one on top of the other. **Size, positions, and margins are defined via CSS in order to harmonize the different charts into one, large visualization**.
 
-I hope you enjoyed reading how our plot about the Sanremo Music Festival has been created; I also hope this article gave you some idea on how to approach this kind of visualization. **For any comments, questions, or hints**, please feel free to write to us on Twitter: [@chrt_io](https://twitter.com/chrt_io "Chart.io on Twitter").
+I hope you enjoyed reading how our plot about the Sanremo Music Festival has been created; I also hope this article gave you some ideas on how to approach this kind of visualization. **For any comments, questions, or hints**, please feel free to write to us on Twitter: [@chrt_io](https://twitter.com/chrt_io "Chart.io on Twitter").
