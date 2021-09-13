@@ -34,7 +34,8 @@ The first one shows an overview of how many male (blue) and female (magenta) pro
 
 The missing y-axis labels are replaced with annotations highlighting the most significant data to give some context.
 
-![](/assets/uploads/screenshot-2021-07-29-at-17-02-44.png)  
+![](/assets/uploads/screenshot-2021-07-29-at-17-02-44.png)
+
 This helps us highlight one of the many inconsistencies in the history of the Festival: 2019 has been the year with the highest number of women ever (nine), yet all of them were _vallette_.
 
 Creating a `.chrtPoint()` chart is easy, and can be done in few simple steps.
